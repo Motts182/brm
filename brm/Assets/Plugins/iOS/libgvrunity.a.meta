@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 99f6596d3eb2f417dba2ce010152d415
-timeCreated: 1470446197
-licenseType: Pro
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
@@ -9,7 +7,6 @@ PluginImporter:
   isPreloaded: 0
   platformData:
     Any:
-<<<<<<< HEAD
       enabled: 0
       settings: {}
     Editor:
@@ -17,8 +14,6 @@ PluginImporter:
       settings:
         DefaultValueInitialized: true
     iOS:
-=======
->>>>>>> nahueBranch
       enabled: 1
       settings: {}
   userData: 

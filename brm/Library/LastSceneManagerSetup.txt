@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenas/login.unity
-=======
-- path: Assets/Scenas/VRImageFlowDemoScene.unity
->>>>>>> nahueBranch
+- path: Assets/Scenas/ImageRiver2.unity
   isLoaded: 1
   isActive: 1

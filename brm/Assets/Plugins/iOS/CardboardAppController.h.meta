@@ -1,6 +1,5 @@
 fileFormatVersion: 2
 guid: 94eb628c570e649bfac361e67f7fc6c3
-<<<<<<< HEAD
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
@@ -20,7 +19,3 @@ PluginImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-=======
-DefaultImporter:
-  userData: 
->>>>>>> nahueBranch
