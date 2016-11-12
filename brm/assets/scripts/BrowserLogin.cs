@@ -10,11 +10,14 @@ public class BrowserLogin : MonoBehaviour
     public string userToken;
     string igPage;
     public Text tokenTxt;
+    public GameObject loginBtn;
+    public GameObject nextBtn;
 
     void Awake()
     {
         igPage = "https://api.instagram.com/oauth/authorize/?client_id=" + clientID + "&redirect_uri=" + redirectUri + "&response_type=token";
         tokenTxt.text = userToken;
+        nextBtn.SetActive(false);
     }
 
     public void InstagramLogin()
@@ -31,4 +34,5 @@ public class BrowserLogin : MonoBehaviour
         yield return new WaitForSeconds(x);
         InAppBrowser.CloseBrowser();
     }
+    
 }
