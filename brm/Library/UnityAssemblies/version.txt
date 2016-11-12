@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+5.4.1f1:2.2.0.0
+StandaloneWindows
+=======
 5.4.1f1:2.3.0.0
 Android
+>>>>>>> 58144bf59fe0d2d8566d0beae24e1c66048c4557
 C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll
 C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
 C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
