@@ -8,6 +8,7 @@ PluginImporter:
   executionOrder: {}
   isPreloaded: 0
   platformData:
+<<<<<<< HEAD
     Android:
       enabled: 1
       settings: {}
@@ -18,6 +19,11 @@ PluginImporter:
       enabled: 0
       settings:
         DefaultValueInitialized: true
+=======
+    Any:
+      enabled: 1
+      settings: {}
+>>>>>>> nahueBranch
   userData: 
   assetBundleName: 
   assetBundleVariant: 

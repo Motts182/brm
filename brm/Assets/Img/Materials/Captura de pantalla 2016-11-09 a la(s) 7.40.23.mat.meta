@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 02a9d79cec0c5fc4bbe6227d7693f3c8
 timeCreated: 1478931240
+=======
+guid: daabf895fa58be14fa065687a5ae9f79
+timeCreated: 1478933161
+>>>>>>> nahueBranch
 licenseType: Free
 NativeFormatImporter:
   userData: 
