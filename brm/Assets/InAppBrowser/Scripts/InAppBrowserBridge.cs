@@ -38,11 +38,14 @@ public class InAppBrowserBridge : MonoBehaviour
         token = System.Text.RegularExpressions.Regex.Replace(token, pattern, string.Empty);
         var browser = FindObjectOfType<BrowserLogin>();
         browser.userToken = token;
-        browser.tokenTxt.text = token;
+        browser.tokenTxt.text = "Estas logueado con Instagram! :D";
         bool matchEndPoint = System.Text.RegularExpressions.Regex.IsMatch(url, pattern);
         if (matchEndPoint == true)
         {
             browser.StartCoroutine(browser.closeBrowserAfterXSec(1));
+            browser.loginBtn.SetActive(false);
+            browser.nextBtn.SetActive(true);
+
         }
         onBrowserFinishedLoading.Invoke(url);
     }

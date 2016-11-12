@@ -7,4 +7,9 @@ public class ButtonAction : MonoBehaviour {
     {
         print("ACTION");
     }
+
+    public void returnAction()
+    {
+        print("RETURN");
+    }
 }
