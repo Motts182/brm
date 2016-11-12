@@ -10,7 +10,7 @@ public class ImageMovement : MonoBehaviour {
 	void Start () {
 			
 
-		iTween.MoveTo (gameObject, iTween.Hash("path", iTweenPath.GetPath(ImgPath), "time", 20f, "easetype", iTween.EaseType.easeInOutSine, "looktarget", GameObject.FindGameObjectWithTag("MainCamera").transform));
+		iTween.MoveTo (gameObject, iTween.Hash("path", iTweenPath.GetPath(ImgPath), "time", 10f, "easetype", iTween.EaseType.easeInOutSine, "looktarget", GameObject.FindGameObjectWithTag("MainCamera").transform));
 	}
 	
 
