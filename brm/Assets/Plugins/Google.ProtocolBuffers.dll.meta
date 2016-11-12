@@ -15,10 +15,13 @@ PluginImporter:
       enabled: 0
       settings:
         DefaultValueInitialized: true
+<<<<<<< HEAD
     WindowsStoreApps:
       enabled: 0
       settings:
         CPU: AnyCPU
+=======
+>>>>>>> nahueBranch
   userData: 
   assetBundleName: 
   assetBundleVariant: 

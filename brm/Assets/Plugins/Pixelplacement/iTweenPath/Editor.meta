@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 2e689156725706b4399602a5d447235a
 folderAsset: yes
 timeCreated: 1478920025
+=======
+guid: 6a34f57520ed1435ba2d042e5b24d340
+folderAsset: yes
+timeCreated: 1473361732
+>>>>>>> nahueBranch
 licenseType: Free
 DefaultImporter:
   userData: 

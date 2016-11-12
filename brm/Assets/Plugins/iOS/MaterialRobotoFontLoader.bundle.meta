@@ -10,6 +10,7 @@ PluginImporter:
   isPreloaded: 0
   platformData:
     Any:
+<<<<<<< HEAD
       enabled: 0
       settings: {}
     Editor:
@@ -17,6 +18,8 @@ PluginImporter:
       settings:
         DefaultValueInitialized: true
     iOS:
+=======
+>>>>>>> nahueBranch
       enabled: 1
       settings: {}
   userData: 
