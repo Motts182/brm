@@ -604,6 +604,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!1001 &1303697444
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010235512724, guid: 6ca3269073781ce44942cd703b705632, type: 2}
+      propertyPath: m_Name
+      value: ImageFlowPrefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6ca3269073781ce44942cd703b705632, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1405039841
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,49 +783,3 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.04}
   m_SizeDelta: {x: 200, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1775377304
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013632260736, guid: 6ca3269073781ce44942cd703b705632, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000010235512724, guid: 6ca3269073781ce44942cd703b705632, type: 2}
-      propertyPath: m_Name
-      value: ImageFlowPrefab
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6ca3269073781ce44942cd703b705632, type: 2}
-  m_IsPrefabParent: 0
