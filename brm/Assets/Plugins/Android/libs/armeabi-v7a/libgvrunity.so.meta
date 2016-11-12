@@ -1,14 +1,11 @@
 fileFormatVersion: 2
 guid: 6cbfccbba5018426db234f5cffb59fe4
-timeCreated: 1470446197
-licenseType: Pro
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
   executionOrder: {}
   isPreloaded: 0
   platformData:
-<<<<<<< HEAD
     Android:
       enabled: 1
       settings:
@@ -20,11 +17,6 @@ PluginImporter:
       enabled: 0
       settings:
         DefaultValueInitialized: true
-=======
-    Any:
-      enabled: 1
-      settings: {}
->>>>>>> nahueBranch
   userData: 
   assetBundleName: 
   assetBundleVariant: 

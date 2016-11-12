@@ -1,12 +1,1 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenas/SphereScene.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenas/login.unity
-=======
-- path: Assets/Scenas/VRImageFlowDemoScene.unity
->>>>>>> nahueBranch
->>>>>>> 66ed6bf19a83652a033006a7628d861b90e71ef2
-  isLoaded: 1
-  isActive: 1
+sceneSetups: []
