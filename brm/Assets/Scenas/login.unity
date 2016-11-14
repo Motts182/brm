@@ -288,7 +288,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Continuar
+  m_Text: Continue
 --- !u!222 &614970243
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -897,7 +897,7 @@ GameObject:
   - 114: {fileID: 2078378730}
   m_Layer: 0
   m_Name: SceneManager
-  m_TagString: Untagged
+  m_TagString: SceneChanger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
