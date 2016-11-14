@@ -21,6 +21,11 @@ public class SceneChanger : MonoBehaviour {
         SceneManager.LoadScene("ImageRiver2");
     }
 
+    public void sphereScene()
+    {
+        SceneManager.LoadScene("SphereScene");
+    }
+
     void Update()
     {
         if (SceneManager.GetActiveScene().name.Equals("posLogin"))
@@ -30,10 +35,5 @@ public class SceneChanger : MonoBehaviour {
                 sphereScene();
             }
         }
-    }
-
-    public void sphereScene()
-    {
-        SceneManager.LoadScene("SphereScene");
     }
 }
