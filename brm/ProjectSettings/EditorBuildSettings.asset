@@ -6,6 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenas/login.unity
+  - enabled: 1
+    path: Assets/Scenas/posLogin.unity
+  - enabled: 1
     path: Assets/Scenas/SphereScene.unity
   - enabled: 1
-    path: Assets/Scenas/login.unity
+    path: Assets/Scenas/ImageRiver2.unity

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-sceneSetups: []
-=======
 sceneSetups:
 - path: Assets/Scenas/ImageRiver2.unity
   isLoaded: 1
   isActive: 1
->>>>>>> 19c465c7a8fa0282f16f4a75ddd7506ae10aba50
