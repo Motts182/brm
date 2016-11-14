@@ -26,14 +26,15 @@ public class SceneChanger : MonoBehaviour {
         SceneManager.LoadScene("SphereScene");
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (SceneManager.GetActiveScene().name.Equals("posLogin"))
+        if (SceneManager.GetActiveScene().name.Equals("login"))
         {
-            if(Time.deltaTime >= 5)
-            {
-                sphereScene();
-            }
+            Screen.orientation = ScreenOrientation.Portrait;
+        }
+        else
+        {
+            Screen.orientation = ScreenOrientation.LandscapeLeft;
         }
     }
 }

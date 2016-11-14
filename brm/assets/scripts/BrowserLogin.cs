@@ -6,7 +6,7 @@ public class BrowserLogin : MonoBehaviour
 {
 
     string clientID = "78d3e74cb7b646fab70a8e381c2d487a";
-    string redirectUri = "https://www.google.com.ar/";
+    string redirectUri = "http://www.brm.com.co/themes/site_themes/brm_site/default_site/Site_brm.group/img/logo.png";
     public string userToken;
     string igPage;
     public Text tokenTxt;

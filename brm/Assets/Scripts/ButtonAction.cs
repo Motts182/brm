@@ -12,4 +12,9 @@ public class ButtonAction : MonoBehaviour {
     {
         GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().sphereScene();
     }
+
+    public void returntoCardboardScene()
+    {
+
+    }
 }

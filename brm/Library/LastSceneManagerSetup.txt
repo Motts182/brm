@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenas/VRImageFlowDemoScene.unity
-=======
-- path: Assets/Scenas/ImageRiverFlow.unity
->>>>>>> 0295c0721416dd5240298169e15366d66c5f1592
+- path: Assets/Scenas/SphereScene.unity
   isLoaded: 1
   isActive: 1
