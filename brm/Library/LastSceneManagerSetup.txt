@@ -1,5 +1,6 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenas/SphereScene.unity
 =======
 <<<<<<< HEAD
@@ -8,5 +9,8 @@ sceneSetups:
 - path: Assets/Scenas/ImageRiverFlow.unity
 >>>>>>> 0295c0721416dd5240298169e15366d66c5f1592
 >>>>>>> e71f891e29a7ddaf2b3e5bc3a113e26a7867208e
+=======
+- path: Assets/Scenas/SphereScene.unity
+>>>>>>> b90865decfabdbf0736f07551235592cce7424f9
   isLoaded: 1
   isActive: 1

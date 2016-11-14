@@ -33,7 +33,7 @@ public class InAppBrowserBridge : MonoBehaviour
 
     void OnBrowserFinishedLoading(string url)
     {
-        string pattern = "https://www.google.com.ar/#access_token=";
+        string pattern = "http://www.brm.com.co/themes/site_themes/brm_site/default_site/Site_brm.group/img/logo.png#access_token=";
         string token = url;
         token = System.Text.RegularExpressions.Regex.Replace(token, pattern, string.Empty);
         var browser = FindObjectOfType<BrowserLogin>();
