@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenas/SphereScene.unity
+=======
+- path: Assets/Scenas/ImageRiver2.unity
+>>>>>>> e04b43c145bc53b883a74455aa21b9ea178edb77
   isLoaded: 1
   isActive: 1

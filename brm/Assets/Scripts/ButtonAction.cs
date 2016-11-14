@@ -3,13 +3,13 @@ using System.Collections;
 
 public class ButtonAction : MonoBehaviour {
 
-	public void buttonAction()
+    public void returntoRiver()
     {
-        print("ACTION");
+        GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene();
     }
 
-    public void returnAction()
+    public void returntoSphere()
     {
-        print("RETURN");
+        GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().sphereScene();
     }
 }

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 5.4.1f1:2.2.0.0
+=======
+5.4.1f1:2.3.0.0
+>>>>>>> e04b43c145bc53b883a74455aa21b9ea178edb77
 Android
 C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll
 C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll

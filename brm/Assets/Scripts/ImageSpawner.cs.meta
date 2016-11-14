@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 692b55016fbfdf34b804b2d470865cf5
 timeCreated: 1478919561
+=======
+guid: 0f316cddb89bfb645bb9ebb3ad8eb130
+timeCreated: 1478810163
+>>>>>>> nahueBranch
 licenseType: Free
 MonoImporter:
   serializedVersion: 2

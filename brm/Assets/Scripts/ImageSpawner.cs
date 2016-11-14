@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ImageSpawner : MonoBehaviour {
 
+
     public GameObject[] imgPrefabs = new GameObject[3];
     public GameObject[] spawnPoints = new GameObject[3];
 
@@ -17,4 +18,5 @@ public class ImageSpawner : MonoBehaviour {
 
 
     }
+
 }
