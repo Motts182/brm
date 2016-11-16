@@ -10,7 +10,7 @@ public class GameControllerScript : MonoBehaviour
     //[SerializeField]
     //BrowserLogin loginRef;
     public string userToken;
-    string hashtag;
+    public string hashtag;
     string url;
     string maxLength;
     string minLength;
@@ -22,20 +22,6 @@ public class GameControllerScript : MonoBehaviour
         RequestByHashtag("snow");
     }
 
-    public IEnumerator WaitforRequest(WWW www)
-    {
-        yield return www;
-        if(www.error == null)
-        {
-            Debug.Log("WWW OK!");
-            JSONParse(www);
-        }
-        else
-        {
-            Debug.Log("WWW ERROR !");
-        }
-    }
-
     public void RequestByHashtag(string hashtag)
     {
         url = "https://api.instagram.com/v1/tags/" + hashtag + "/media/recent?access_token=" + userToken;
@@ -43,12 +29,60 @@ public class GameControllerScript : MonoBehaviour
         StartCoroutine(WaitforRequest(www));
     }
 
-    void JSONParse(WWW www)
+    public IEnumerator WaitforRequest(WWW www)
     {
-        //print(www.text);
-        data = JsonMapper.ToObject(www.text);
-        WWW imglink = new WWW(data["data"][0]["images"]["standard_resolution"]["url"].ToString());
-        
+        yield return www;
+        if (www.error == null)
+        {
+            JSONParse(www);
+        }
+        else
+        {
+            Debug.Log("WWW ERROR !" + www.error);
+        }
     }
 
+    public void JSONParse(WWW www)
+    {
+        data = JsonMapper.ToObject(www.text);
+        List<string> listaURLS = new List<string>();
+        for (int i = 0; i < data["data"].Count; i++)
+        {
+            listaURLS.Add(data["data"][i]["images"]["standard_resolution"]["url"].ToString());
+        }
+        StartCoroutine(cargarListaSprites(listaURLS));
+        //WWW imglink = new WWW(data["data"][0]["images"]["standard_resolution"]["url"].ToString());
+        //Texture2D texture = new Texture2D(1, 1);
+        //imglink.LoadImageIntoTexture(texture);
+        //Sprite spr = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+        //GameObject.Find("img").GetComponent<Image>().sprite = spr;
+
+    }
+
+    public IEnumerator cargarListaSprites(List<string> urlList)
+    {
+        
+        List<Sprite> spriteList = new List<Sprite>();
+
+        foreach (string url in urlList)
+        {
+            WWW imglink = new WWW(url);
+            yield return imglink;
+            Texture2D texture = new Texture2D(1, 1);
+            imglink.LoadImageIntoTexture(texture);
+            Sprite spr = new Sprite();
+            spr = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+            spriteList.Add(spr);
+        }
+        cargarimgs(spriteList);
+    }
+
+    public void cargarimgs(List<Sprite> s)
+    {
+        GameObject[] a = GameObject.FindGameObjectsWithTag("Word");
+        for (int i = 0; i < s.Count; i++)
+        {
+            a[i].GetComponent<Image>().sprite = s[i];
+        }
+    }
 }

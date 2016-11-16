@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class BrowserLogin : MonoBehaviour
 {
 
-    string clientID = "e2b157c42b814567a3fd7d4d133f2890";
+    string clientID = "78d3e74cb7b646fab70a8e381c2d487a";
     string redirectUri = "http://www.brm.com.co/themes/site_themes/brm_site/default_site/Site_brm.group/img/logo.png";
     private string userToken;
     string igPage;
