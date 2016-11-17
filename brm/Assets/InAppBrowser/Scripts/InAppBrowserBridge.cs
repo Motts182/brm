@@ -37,7 +37,7 @@ public class InAppBrowserBridge : MonoBehaviour
         string token = url;
         token = System.Text.RegularExpressions.Regex.Replace(token, pattern, string.Empty);
         var browser = FindObjectOfType<BrowserLogin>();
-        browser.userToken = token;
+        browser.UserToken = token;
         browser.tokenTxt.text = "Estas logueado con Instagram! :D";
         bool matchEndPoint = System.Text.RegularExpressions.Regex.IsMatch(url, pattern);
         if (matchEndPoint == true)

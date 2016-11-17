@@ -11,7 +11,7 @@ public class ImageSpawnerNahue : MonoBehaviour {
 
 		for (int i = 0; i < cantImg; i++) {
 
-			GameObject img = Instantiate (imgRef[Random.Range(0,2)], this.transform.position, Quaternion.identity) as GameObject;
+			GameObject img = Instantiate (imgRef[Random.Range(0,imgRef.Length)], this.transform.position, Quaternion.identity) as GameObject;
 
 			img.GetComponent<ImageMovement> ().ImgPath = "ImagePath" + i;
 
