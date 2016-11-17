@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenas/VRImageFlowDemoScene.unity
+- path: Assets/Scenas/TestImgScene.unity
   isLoaded: 1
   isActive: 1
