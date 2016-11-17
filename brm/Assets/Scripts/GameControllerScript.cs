@@ -51,26 +51,18 @@ public class GameControllerScript : MonoBehaviour
             listaURLS.Add(data["data"][i]["images"]["standard_resolution"]["url"].ToString());
         }
         StartCoroutine(cargarListaSprites(listaURLS));
-        //WWW imglink = new WWW(data["data"][0]["images"]["standard_resolution"]["url"].ToString());
-        //Texture2D texture = new Texture2D(1, 1);
-        //imglink.LoadImageIntoTexture(texture);
-        //Sprite spr = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
-        //GameObject.Find("img").GetComponent<Image>().sprite = spr;
-
     }
 
     public IEnumerator cargarListaSprites(List<string> urlList)
     {
-        
         List<Sprite> spriteList = new List<Sprite>();
-
+        Sprite spr;
         foreach (string url in urlList)
         {
             WWW imglink = new WWW(url);
             yield return imglink;
             Texture2D texture = new Texture2D(1, 1);
             imglink.LoadImageIntoTexture(texture);
-            Sprite spr = new Sprite();
             spr = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
             spriteList.Add(spr);
         }
@@ -79,10 +71,8 @@ public class GameControllerScript : MonoBehaviour
 
     public void cargarimgs(List<Sprite> s)
     {
-        GameObject[] a = GameObject.FindGameObjectsWithTag("Word");
-        for (int i = 0; i < s.Count; i++)
-        {
-            a[i].GetComponent<Image>().sprite = s[i];
-        }
+        var imgspawner = GameObject.Find("ImageSpawner").GetComponent<ImgSpawner>();
+        imgspawner.spriteList = s;
+        imgspawner.Spawn();
     }
 }

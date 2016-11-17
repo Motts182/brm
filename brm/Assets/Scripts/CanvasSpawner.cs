@@ -18,7 +18,8 @@ public class CanvasSpawner : MonoBehaviour
             var x = Mathf.Sin(angle) * radius;
             var z = Mathf.Cos(angle) * radius;
             var pos = new Vector3(x, 1, z);
-            Instantiate(wordPrefab, pos, Quaternion.identity);
+            GameObject go = Instantiate(wordPrefab, pos, Quaternion.identity) as GameObject;
+            go.transform.SetParent(GameObject.Find("WordSphere").transform);
         }
     }
 

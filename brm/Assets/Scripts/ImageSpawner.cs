@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ImageSpawnerNahue : MonoBehaviour {
+public class ImageSpawner : MonoBehaviour {
 
 	public int cantImg;
 	public GameObject[] imgRef;
