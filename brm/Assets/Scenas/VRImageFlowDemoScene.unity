@@ -630,6 +630,12 @@ Prefab:
       propertyPath: m_Name
       value: ImageFlowPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013597234750, guid: 6ca3269073781ce44942cd703b705632,
+        type: 2}
+      propertyPath: imgRef.Array.data[2]
+      value: 
+      objectReference: {fileID: 1000011133025816, guid: 6993ef7de1fc97f4e8cce599a936b9b9,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ca3269073781ce44942cd703b705632, type: 2}
   m_IsPrefabParent: 0
