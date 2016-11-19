@@ -464,9 +464,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1073710961}
-  - 114: {fileID: 1073710963}
+  - 114: {fileID: 1073710962}
   m_Layer: 0
-  m_Name: ImgSpawner
+  m_Name: ImageSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -480,13 +480,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1073710960}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 14.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
---- !u!114 &1073710963
+--- !u!114 &1073710962
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -494,14 +494,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1073710960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a080543e6a80b9644862a3f8c110d49b, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ea836cb8ddbc3c439dcbc8d0d76e520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cantImg: 3
-  imgRef:
-  - {fileID: 1000011133025816, guid: 6993ef7de1fc97f4e8cce599a936b9b9, type: 2}
-  - {fileID: 1000011133025816, guid: ae19eb3278fc77a4da7256c243c32c6b, type: 2}
-  - {fileID: 1000011133025816, guid: 88bb02e80546c66499e7d98e54dbfea1, type: 2}
+  imgRef: {fileID: 1000013363359940, guid: 6c0eaaa1f6857ea43a9cb654331d3c49, type: 2}
+  spriteList: []
 --- !u!1 &1113738064
 GameObject:
   m_ObjectHideFlags: 0

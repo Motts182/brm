@@ -19,7 +19,10 @@ public class GameControllerScript : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        RequestByHashtag("snow");
+        if (GameObject.Find("ImageSpawner") != null)
+        {
+            RequestByHashtag("snow");
+        };
     }
 
     public void RequestByHashtag(string hashtag)

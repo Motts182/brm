@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using LitJson;
 
 public class BrowserLogin : MonoBehaviour
 {
@@ -9,17 +10,17 @@ public class BrowserLogin : MonoBehaviour
     string redirectUri = "http://www.brm.com.co/themes/site_themes/brm_site/default_site/Site_brm.group/img/logo.png";
     private string userToken;
     string igPage;
-    public Text tokenTxt;
+    public Text loginMessage;
     public GameObject loginBtn;
     public GameObject nextBtn;
-
+    public GameObject profilePic;
 
 
     void Awake()
     {
         igPage = "https://api.instagram.com/oauth/authorize/?client_id=" + clientID + "&redirect_uri=" + redirectUri + "&response_type=token";
-        tokenTxt.text = userToken;
         nextBtn.SetActive(false);
+        profilePic.SetActive(false);
     }
 
     public void InstagramLogin()
@@ -37,11 +38,19 @@ public class BrowserLogin : MonoBehaviour
         InAppBrowser.CloseBrowser();
     }
 
-    public IEnumerator getprofilepic()
+    public IEnumerator getProfilePicture()
     {
         WWW request = new WWW("https://api.instagram.com/v1/users/self/?access_token=" + userToken);
         yield return request;
-
+        JsonData data = JsonMapper.ToObject(request.text);
+        WWW request2 = new WWW(data["data"]["profile_picture"].ToString());
+        yield return request2;
+        Texture2D picTexture = new Texture2D(1, 1);
+        request2.LoadImageIntoTexture(picTexture);
+        Sprite picSprite = Sprite.Create(picTexture, new Rect(0, 0, picTexture.width, picTexture.height), new Vector2(0.5f, 0.5f));
+        profilePic.GetComponent<Image>().sprite = picSprite;
+        profilePic.SetActive(true);
+        loginMessage.text = "Welcome, " + data["data"]["full_name"].ToString() + " ! :D";
     }
 
     void GetToken()
@@ -49,6 +58,7 @@ public class BrowserLogin : MonoBehaviour
         if (userToken != null)
         {
             GameControllerScript gcs = FindObjectOfType<GameControllerScript>();
+            StartCoroutine(getProfilePicture());
             gcs.userToken = userToken;
         }
     }
@@ -58,7 +68,6 @@ public class BrowserLogin : MonoBehaviour
         {
             userToken = value;
             GetToken();
-            
         }
     }
 }

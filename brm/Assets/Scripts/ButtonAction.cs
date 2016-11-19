@@ -5,7 +5,7 @@ public class ButtonAction : MonoBehaviour {
 
     public void returntoRiver()
     {
-        GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene();
+        GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene(Random.Range(0, 2).ToString());
     }
 
     public void returntoSphere()
@@ -13,8 +13,8 @@ public class ButtonAction : MonoBehaviour {
         GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().sphereScene();
     }
 
-    public void returntoCardboardScene()
+    public void exit()
     {
-
+        Application.Quit();
     }
 }

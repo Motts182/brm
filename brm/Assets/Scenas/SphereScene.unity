@@ -157,7 +157,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Return to Video
+  m_Text: 'Exit
+
+    App'
 --- !u!222 &491830199
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -629,7 +631,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1113738069}
-        m_MethodName: returnAction
+        m_MethodName: exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

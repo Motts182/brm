@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class WordScript : MonoBehaviour {
+public class WordScript : MonoBehaviour
+{
 
     GameObject cameraPos;
     int minDist = 5;

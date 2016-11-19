@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using System;
 
-public class SceneChanger : MonoBehaviour {
+public class SceneChanger : MonoBehaviour
+{
 
 
     void Start()
@@ -16,9 +17,21 @@ public class SceneChanger : MonoBehaviour {
         SceneManager.LoadScene("posLogin");
     }
 
-    internal void riverScene()
+    internal void riverScene(string scene)
     {
-        SceneManager.LoadScene("ImageRiver2");
+        switch (scene)
+        {
+            case "1":
+                SceneManager.LoadScene("ImageRiver2");
+                break;
+            case "2":
+                SceneManager.LoadScene("VRImageFlowDemoScene");
+                break;
+            default:
+                Debug.Log("ERROR LOADING RIVER");
+                break;
+        }
+
     }
 
     public void sphereScene()

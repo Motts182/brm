@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ImageMovement : MonoBehaviour
 {
@@ -7,20 +8,21 @@ public class ImageMovement : MonoBehaviour
 
     void Start()
     {
-        iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath(ImgPath), "time", 10f, "easetype", iTween.EaseType.easeInOutSine, "looktarget", GameObject.FindGameObjectWithTag("MainCamera").transform));
+        iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath(ImgPath), "time", 15f, "easetype", iTween.EaseType.easeInOutSine, "looktarget", GameObject.FindGameObjectWithTag("MainCamera").transform));
     }
 
-    //void Update()
-    //{
-    //    if (Vector3.Distance(this.transform.position, GameObject.FindGameObjectWithTag("MainCamera").transform.position) <= 2)
-    //    {
-    //        this.GetComponentInChildren<MeshRenderer>().enabled = false;
-    //    }
-    //    else
-    //    {
-    //        this.GetComponentInChildren<MeshRenderer>().enabled = true;
-    //    }
-
-    //}
-
+    private void FixedUpdate()
+    {
+        if(GameObject.Find("MainCamera") != null)
+        {
+            if (Vector3.Distance(this.gameObject.transform.position, GameObject.Find("MainCamera").transform.position) >= 5)
+            {
+                GetComponentInChildren<Image>().enabled = false;
+            }
+            else
+            {
+                GetComponentInChildren<Image>().enabled = true;
+            }
+        }
+    }
 }
