@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenas/login.unity
+- path: Assets/Scenas/videoScene.unity
   isLoaded: 1
   isActive: 1

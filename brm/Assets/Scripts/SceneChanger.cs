@@ -5,8 +5,6 @@ using System;
 
 public class SceneChanger : MonoBehaviour
 {
-
-
     void Start()
     {
         DontDestroyOnLoad(gameObject);
@@ -15,6 +13,11 @@ public class SceneChanger : MonoBehaviour
     public void gifScene()
     {
         SceneManager.LoadScene("posLogin");
+    }
+
+    public void videoScene()
+    {
+        SceneManager.LoadScene("videoScene");
     }
 
     internal void riverScene(string scene)
@@ -31,7 +34,6 @@ public class SceneChanger : MonoBehaviour
                 Debug.Log("ERROR LOADING RIVER");
                 break;
         }
-
     }
 
     public void sphereScene()

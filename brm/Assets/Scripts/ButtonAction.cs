@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class ButtonAction : MonoBehaviour {
+public class ButtonAction : MonoBehaviour
+{
 
-    public void returntoRiver()
+    public void riverSceneRandom()
     {
         GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene(Random.Range(0, 2).ToString());
     }
 
-    public void returntoSphere()
+    public void sphereScene()
     {
         GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().sphereScene();
     }
@@ -16,5 +16,11 @@ public class ButtonAction : MonoBehaviour {
     public void exit()
     {
         Application.Quit();
+    }
+    
+
+    public void videoScene()
+    {
+        GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().videoScene();
     }
 }
