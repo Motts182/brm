@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Plugins/EasyMovieTexture/Scene/Demo_Sphere.unity
   - enabled: 1
     path: Assets/Scenas/login.unity
   - enabled: 1
     path: Assets/Scenas/posLogin.unity
+  - enabled: 1
+    path: Assets/Scenas/videoScene.unity
   - enabled: 1
     path: Assets/Scenas/SphereScene.unity
   - enabled: 1
