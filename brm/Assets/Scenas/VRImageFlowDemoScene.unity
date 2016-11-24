@@ -582,7 +582,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-<<<<<<< HEAD
 --- !u!1 &665915456
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,8 +809,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -13.277}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
-=======
->>>>>>> ea2883a886be96720e6b694c237e568bfb2ec3c5
 --- !u!1001 &848404732
 Prefab:
   m_ObjectHideFlags: 0
@@ -1106,13 +1103,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
   m_RootOrder: 6
 --- !u!1 &1812851035
-=======
-  m_RootOrder: 5
---- !u!1 &1417136887
->>>>>>> ea2883a886be96720e6b694c237e568bfb2ec3c5
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1000011975464228, guid: 9a09cad1778fe1341a9f26e5f3375983,
