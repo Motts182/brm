@@ -8,8 +8,9 @@ public class ImgSpawner : MonoBehaviour {
     public int cantImg;
     public GameObject imgRef;
     public List<Sprite> spriteList = new List<Sprite>();
+    public List<string> imgLinkList = new List<string>();
 
-    public void Spawn()
+    public IEnumerator Spawn()
     {
         for (int i = 0; i < cantImg; i++)
         {
@@ -17,6 +18,7 @@ public class ImgSpawner : MonoBehaviour {
             img.GetComponentInChildren<Image>().sprite = spriteList[Random.Range(0, spriteList.Count)];
             img.GetComponent<ImageMovement>().ImgPath = "ImagePath" + i;
             img.transform.SetParent(this.transform);
+            yield return new WaitForSeconds(5f);
         }
     }
 }

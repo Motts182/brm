@@ -115,7 +115,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 194023872}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.8, y: 0, z: -3.97}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -417,7 +417,7 @@ MonoBehaviour:
   nodeCount: 4
   initialized: 1
   initialName: New Path 1
-  pathVisible: 0
+  pathVisible: 1
 --- !u!114 &461692816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,7 +442,7 @@ MonoBehaviour:
   nodeCount: 6
   initialized: 1
   initialName: New Path 1
-  pathVisible: 0
+  pathVisible: 1
 --- !u!114 &461692817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,7 +466,7 @@ MonoBehaviour:
   nodeCount: 5
   initialized: 1
   initialName: New Path 1
-  pathVisible: 0
+  pathVisible: 1
 --- !u!114 &461692818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,7 +493,7 @@ MonoBehaviour:
   nodeCount: 8
   initialized: 1
   initialName: New Path 1
-  pathVisible: 0
+  pathVisible: 1
 --- !u!114 &461692819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,7 +516,7 @@ MonoBehaviour:
   nodeCount: 4
   initialized: 1
   initialName: New Path 1
-  pathVisible: 0
+  pathVisible: 1
 --- !u!114 &461692820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,7 +541,7 @@ MonoBehaviour:
   nodeCount: 6
   initialized: 1
   initialName: New Path 1
-  pathVisible: 0
+  pathVisible: 1
 --- !u!114 &461692821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,7 +565,7 @@ MonoBehaviour:
   nodeCount: 5
   initialized: 1
   initialName: New Path 1
-  pathVisible: 0
+  pathVisible: 1
 --- !u!114 &461692822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,7 +592,7 @@ MonoBehaviour:
   nodeCount: 8
   initialized: 1
   initialName: New Path 1
-  pathVisible: 0
+  pathVisible: 1
 --- !u!114 &461692823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -650,7 +650,7 @@ MonoBehaviour:
   nodeCount: 10
   initialized: 1
   initialName: New Path 1
-  pathVisible: 0
+  pathVisible: 1
 --- !u!114 &461692825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -679,7 +679,7 @@ MonoBehaviour:
   nodeCount: 10
   initialized: 1
   initialName: New Path 1
-  pathVisible: 0
+  pathVisible: 1
 --- !u!1001 &848404732
 Prefab:
   m_ObjectHideFlags: 0
