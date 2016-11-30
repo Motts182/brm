@@ -243,6 +243,7 @@ MonoBehaviour:
   cantImg: 15
   imgRef: {fileID: 1000013363359940, guid: 6c0eaaa1f6857ea43a9cb654331d3c49, type: 2}
   spriteList: []
+  imgLinkList: []
 --- !u!1001 &848404732
 Prefab:
   m_ObjectHideFlags: 0
@@ -289,6 +290,58 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 482300, guid: 60270cf52a5e94998a5a335989159738, type: 2}
   m_PrefabInternal: {fileID: 848404732}
+--- !u!1001 &900382216
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 422.5669
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 209.99158
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010711926904, guid: 08d12e3e26e76624e9c633aa3d28c4b6,
+        type: 2}
+      propertyPath: userToken
+      value: 1474921476.78d3e74.533f9347905f4746bf2147d151c48049
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010711926904, guid: 08d12e3e26e76624e9c633aa3d28c4b6,
+        type: 2}
+      propertyPath: hashtag
+      value: snow
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &946975180
 Prefab:
   m_ObjectHideFlags: 0
@@ -590,7 +643,7 @@ MonoBehaviour:
   pathName: ImagePath14
   pathColor: {r: 0, g: 0.8758622, b: 1, a: 1}
   nodes:
-  - {x: 0.1218189, y: 3, z: -3.1139693}
+  - {x: 0.1218189, y: 3.0051973, z: -3.1139693}
   - {x: 1.8054945, y: 3, z: -2.4614153}
   - {x: 3.0597692, y: 3, z: -0.90271735}
   - {x: 2.880323, y: 3, z: 1.3221911}

@@ -7,7 +7,7 @@ public class ButtonAction : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("SceneChanger") != null)
         {
-            GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene(Random.Range(0, 2).ToString());
+            GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene(Random.Range(0, 3).ToString());
         }
         else
         {

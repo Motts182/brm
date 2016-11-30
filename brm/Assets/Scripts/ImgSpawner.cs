@@ -2,21 +2,40 @@
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
-public class ImgSpawner : MonoBehaviour {
+public class ImgSpawner : MonoBehaviour
+{
 
     public int cantImg;
     public GameObject imgRef;
     public List<Sprite> spriteList = new List<Sprite>();
+    public List<string> imgLinkList = new List<string>();
+    public List<GameObject> spawnPoints = new List<GameObject>();
 
-    public void Spawn()
+    public IEnumerator Spawn()
     {
-        for (int i = 0; i < cantImg; i++)
+        if (SceneManager.GetActiveScene().name != "ImageRiver4")
         {
-            GameObject img = Instantiate(imgRef, this.transform.position, Quaternion.identity) as GameObject;
-            img.GetComponentInChildren<Image>().sprite = spriteList[Random.Range(0, spriteList.Count)];
-            img.GetComponent<ImageMovement>().ImgPath = "ImagePath" + i;
-            img.transform.SetParent(this.transform);
+            for (int i = 0; i < cantImg; i++)
+            {
+                GameObject img = Instantiate(imgRef, this.transform.position, Quaternion.identity) as GameObject;
+                img.GetComponentInChildren<Image>().sprite = spriteList[Random.Range(0, spriteList.Count)];
+                img.GetComponent<ImageMovement>().ImgPath = "ImagePath" + i;
+                img.transform.SetParent(this.transform);
+                yield return new WaitForSeconds(5f);
+            }
         }
+        else
+        {
+            for (int i = 0; i < cantImg; i++)
+            {
+                GameObject img = Instantiate(imgRef, spawnPoints[i].transform.position, Quaternion.identity) as GameObject;
+                img.GetComponentInChildren<Image>().sprite = spriteList[Random.Range(0, spriteList.Count)];
+                img.transform.SetParent(this.transform);
+                yield return null;
+            }
+        }
+
     }
 }

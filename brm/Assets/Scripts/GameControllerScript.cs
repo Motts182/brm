@@ -59,6 +59,7 @@ public class GameControllerScript : MonoBehaviour
     public IEnumerator cargarListaSprites(List<string> urlList)
     {
         List<Sprite> spriteList = new List<Sprite>();
+        List<string> imgLinkList = new List<string>();
         Sprite spr;
         foreach (string url in urlList)
         {
@@ -68,14 +69,16 @@ public class GameControllerScript : MonoBehaviour
             imglink.LoadImageIntoTexture(texture);
             spr = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
             spriteList.Add(spr);
+            imgLinkList.Add(url);
         }
-        cargarimgs(spriteList);
+        cargarimgs(spriteList, imgLinkList);
     }
 
-    public void cargarimgs(List<Sprite> s)
+    public void cargarimgs(List<Sprite> spriteList, List<string> imgLinkList)
     {
         var imgspawner = GameObject.Find("ImageSpawner").GetComponent<ImgSpawner>();
-        imgspawner.spriteList = s;
-        imgspawner.Spawn();
+        imgspawner.spriteList = spriteList;
+        imgspawner.imgLinkList = imgLinkList;
+        StartCoroutine(imgspawner.Spawn());
     }
 }
