@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class ImageMovement : MonoBehaviour
 {
     public string ImgPath;
-    Image imgScript;
+    Image image;
     float aux;
     public float decAlpha = 0.005f;
     bool alphaOn;
@@ -13,7 +13,7 @@ public class ImageMovement : MonoBehaviour
     void Awake()
     {
         aux = 1f;
-        imgScript = GetComponentInChildren<Image>();
+        image = GetComponentInChildren<Image>();
     }
 
     void Start()
@@ -62,7 +62,7 @@ public class ImageMovement : MonoBehaviour
     {
         if (alphaOn) {
             aux -= decAlpha;
-            imgScript.material.SetColor("_Color", new Color(1, 1, 1, aux));
+            image.material.SetColor("_Color", new Color(1, 1, 1, aux));
             if (aux <= 0) {
                 print("aux " + aux);
 
