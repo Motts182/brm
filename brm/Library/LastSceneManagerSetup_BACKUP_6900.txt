@@ -1,0 +1,8 @@
+sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenas/posLogin.unity
+=======
+- path: Assets/Scenas/videoScene.unity
+>>>>>>> Diseno1
+  isLoaded: 1
+  isActive: 1

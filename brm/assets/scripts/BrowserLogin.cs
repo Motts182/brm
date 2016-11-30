@@ -14,13 +14,18 @@ public class BrowserLogin : MonoBehaviour
     public GameObject loginBtn;
     public GameObject nextBtn;
     public GameObject profilePic;
+    public GameObject panelLogin;
+    public GameObject panelPic;
 
 
     void Awake()
     {
         igPage = "https://api.instagram.com/oauth/authorize/?client_id=" + clientID + "&redirect_uri=" + redirectUri + "&response_type=token";
+
         nextBtn.SetActive(false);
         profilePic.SetActive(false);
+        panelPic.SetActive(false);
+        panelLogin.SetActive(true);
     }
 
     public void InstagramLogin()
@@ -50,7 +55,9 @@ public class BrowserLogin : MonoBehaviour
         Sprite picSprite = Sprite.Create(picTexture, new Rect(0, 0, picTexture.width, picTexture.height), new Vector2(0.5f, 0.5f));
         profilePic.GetComponent<Image>().sprite = picSprite;
         profilePic.SetActive(true);
-        loginMessage.text = "Welcome, " + data["data"]["full_name"].ToString() + " ! :D";
+        panelPic.SetActive(true);
+        panelLogin.SetActive(false);
+        loginMessage.text = "Welcome, " + data["data"]["full_name"].ToString() + " !";
     }
 
     void GetToken()
