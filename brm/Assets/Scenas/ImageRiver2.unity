@@ -490,7 +490,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1073710960}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 1, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -507,9 +507,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ea836cb8ddbc3c439dcbc8d0d76e520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cantImg: 3
+  cantImg: 8
   imgRef: {fileID: 1000013363359940, guid: 6c0eaaa1f6857ea43a9cb654331d3c49, type: 2}
   spriteList: []
+  imgLinkList: []
 --- !u!1 &1113738064
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,6 +677,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010011728584, guid: 9a09cad1778fe1341a9f26e5f3375983,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: sphereScene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a09cad1778fe1341a9f26e5f3375983, type: 2}
   m_IsPrefabParent: 0
@@ -757,6 +763,11 @@ GameObject:
   - 114: {fileID: 1570096051}
   - 114: {fileID: 1570096050}
   - 114: {fileID: 1570096049}
+  - 114: {fileID: 1570096054}
+  - 114: {fileID: 1570096053}
+  - 114: {fileID: 1570096052}
+  - 114: {fileID: 1570096056}
+  - 114: {fileID: 1570096055}
   m_Layer: 0
   m_Name: ImgPaths
   m_TagString: Untagged
@@ -793,8 +804,8 @@ MonoBehaviour:
   pathName: ImagePath2
   pathColor: {r: 1, g: 0, b: 0, a: 1}
   nodes:
-  - {x: 10, y: 0, z: 10}
-  - {x: -10, y: 0, z: -10}
+  - {x: -5, y: 0, z: 5}
+  - {x: -5, y: 0, z: 5}
   nodeCount: 2
   initialized: 1
   initialName: New Path 1
@@ -814,8 +825,8 @@ MonoBehaviour:
   pathName: ImagePath1
   pathColor: {r: 0, g: 0, b: 0, a: 1}
   nodes:
-  - {x: 0, y: 0, z: 10}
-  - {x: 0, y: 0, z: -10}
+  - {x: 5, y: 3, z: 5}
+  - {x: 5, y: 3, z: 5}
   nodeCount: 2
   initialized: 1
   initialName: New Path 1
@@ -835,8 +846,108 @@ MonoBehaviour:
   pathName: ImagePath0
   pathColor: {r: 0, g: 1, b: 1, a: 1}
   nodes:
-  - {x: -10, y: 0, z: 10}
-  - {x: 10, y: 0, z: -10}
+  - {x: 5, y: 0, z: 5}
+  - {x: 5, y: 0, z: 5}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
+--- !u!114 &1570096052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1570096047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: ImagePath5
+  pathColor: {r: 1, g: 0.35172412, b: 0, a: 1}
+  nodes:
+  - {x: 2, y: 1, z: 5}
+  - {x: 2, y: 1, z: 5}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
+--- !u!114 &1570096053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1570096047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: ImagePath4
+  pathColor: {r: 0, g: 1, b: 0.006896496, a: 1}
+  nodes:
+  - {x: 0, y: 3, z: 5}
+  - {x: 0, y: 3, z: 5}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
+--- !u!114 &1570096054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1570096047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: ImagePath3
+  pathColor: {r: 0, g: 0, b: 1, a: 1}
+  nodes:
+  - {x: -5, y: 3, z: 5}
+  - {x: -5, y: 3, z: 5}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
+--- !u!114 &1570096055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1570096047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: ImagePath7
+  pathColor: {r: 0.24264705, g: 0.784, b: 0.24264705, a: 1}
+  nodes:
+  - {x: -2, y: 1, z: 5}
+  - {x: -2, y: 1, z: 5}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
+--- !u!114 &1570096056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1570096047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: ImagePath6
+  pathColor: {r: 0.625, g: 0.50583166, b: 0.44117647, a: 1}
+  nodes:
+  - {x: 3, y: 4, z: 5}
+  - {x: 3, y: 4, z: 5}
   nodeCount: 2
   initialized: 1
   initialName: New Path 1
@@ -921,7 +1032,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 640981041}
-        m_MethodName: returntoSphere
+        m_MethodName: sphereScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

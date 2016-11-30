@@ -510,6 +510,7 @@ MonoBehaviour:
   cantImg: 6
   imgRef: {fileID: 1000013363359940, guid: 6c0eaaa1f6857ea43a9cb654331d3c49, type: 2}
   spriteList: []
+  imgLinkList: []
 --- !u!1 &1113738064
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +676,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010011728584, guid: 9a09cad1778fe1341a9f26e5f3375983,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: sphereScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a09cad1778fe1341a9f26e5f3375983, type: 2}
@@ -984,7 +990,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 640981041}
-        m_MethodName: returntoSphere
+        m_MethodName: sphereScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
