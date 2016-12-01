@@ -25,13 +25,19 @@ public class SceneChanger : MonoBehaviour
         switch (scene)
         {
             case "1":
-                SceneManager.LoadScene("ImageRiver");
-                break;
-            case "2":
                 SceneManager.LoadScene("VRImageFlowDemoScene");
                 break;
+            case "2":
+                SceneManager.LoadScene("ImageRiver");
+                break;
             case "3":
+                SceneManager.LoadScene("ImageRiver2");
+                break;
+            case "4":
                 SceneManager.LoadScene("ImageRiver3");
+                break;
+            case "5":
+                SceneManager.LoadScene("ImageRiver4");
                 break;
             default:
                 Debug.Log("ERROR LOADING RIVER");
