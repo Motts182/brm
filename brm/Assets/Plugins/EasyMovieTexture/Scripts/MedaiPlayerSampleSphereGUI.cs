@@ -9,7 +9,6 @@ public class MedaiPlayerSampleSphereGUI : MonoBehaviour {
 	
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 		foreach(Touch touch in Input.touches)

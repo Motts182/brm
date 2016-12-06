@@ -45,8 +45,15 @@ public class ButtonAction : MonoBehaviour
         }
     }
 
-    public void replayVideo()
+    public void cinemaScene()
     {
-
+        if (GameObject.FindGameObjectWithTag("SceneChanger") != null)
+        {
+            GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().cinemaScene();
+        }
+        else
+        {
+            print("No hay SceneChanger");
+        }
     }
 }

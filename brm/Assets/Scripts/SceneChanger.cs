@@ -50,6 +50,11 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("SphereScene");
     }
 
+    public void cinemaScene()
+    {
+        SceneManager.LoadScene("CinemaYoutubeScene");
+    }
+
     void FixedUpdate()
     {
         if (SceneManager.GetActiveScene().name.Equals("login"))

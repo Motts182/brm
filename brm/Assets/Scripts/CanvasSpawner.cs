@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class CanvasSpawner : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class CanvasSpawner : MonoBehaviour
         var numPoints = 52;
         for (var pointNum = 0; pointNum < numPoints; pointNum++)
         {
-            float radius = 1.9f;
+            float radius = 3f;
             var i = (pointNum * 1.0) / numPoints;
             float angle = (float)(i * Mathf.PI * 2);
             var x = Mathf.Sin(angle) * radius;
@@ -21,6 +22,7 @@ public class CanvasSpawner : MonoBehaviour
             GameObject go = Instantiate(wordPrefab, pos, Quaternion.identity) as GameObject;
             go.transform.SetParent(GameObject.Find("WordSphere").transform);
         }
+        
     }
 
     void Start()

@@ -12,6 +12,7 @@ public class VideoSphere : MonoBehaviour
     public IEnumerator changeScene()
     {
         yield return new WaitForSeconds(30f);
-        GameObject.Find("SceneManager").GetComponent<SceneChanger>().sphereScene();
+        // GameObject.Find("SceneManager").GetComponent<SceneChanger>().sphereScene();
+        Application.Quit();
     }
 }
