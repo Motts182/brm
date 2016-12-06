@@ -38,7 +38,7 @@ public class ImageMovement2 : MonoBehaviour
         }
         else
         {
-            transform.LookAt(GameObject.FindGameObjectWithTag("MainCamera").transform);
+            transform.LookAt(2 * transform.position - GameObject.FindGameObjectWithTag("MainCamera").transform.position);
         }
     }
 }

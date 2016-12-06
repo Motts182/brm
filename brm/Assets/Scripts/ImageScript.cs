@@ -5,10 +5,6 @@ public class ImageScript : MonoBehaviour
 {
 
     public string imglink;
-    void Start()
-    {
-
-    }
 
     public void imagePausePath()
     {
@@ -27,8 +23,7 @@ public class ImageScript : MonoBehaviour
         form.headers["Method"] = "POST";
         form.headers["Accept"] = "applicaton/json";
         form.headers["Date"] = System.DateTime.Now.ToString("ddd, dd MMM yyyy HH:mm:ss zzz");
-        //WWW www = new WWW("https://api.instagram.com/v1/media/"+ /*MEDIA ID*/ +"/likes", form);
+        WWW www = new WWW("https://api.instagram.com/v1/media/"+ imglink +"/likes", form);
         yield return null;
-        
     }
 }

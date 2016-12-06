@@ -15,6 +15,7 @@ public class GameControllerScript : MonoBehaviour
     string maxLength;
     string minLength;
     public JsonData data;
+    List<string> imgLinkList = new List<string>();
 
     void Start()
     {
@@ -52,6 +53,7 @@ public class GameControllerScript : MonoBehaviour
         for (int i = 0; i < data["data"].Count; i++)
         {
             listaURLS.Add(data["data"][i]["images"]["standard_resolution"]["url"].ToString());
+            imgLinkList.Add(data["data"][i]["link"].ToString());
         }
         StartCoroutine(cargarListaSprites(listaURLS));
     }
@@ -59,7 +61,6 @@ public class GameControllerScript : MonoBehaviour
     public IEnumerator cargarListaSprites(List<string> urlList)
     {
         List<Sprite> spriteList = new List<Sprite>();
-        List<string> imgLinkList = new List<string>();
         Sprite spr;
         foreach (string url in urlList)
         {
@@ -69,7 +70,6 @@ public class GameControllerScript : MonoBehaviour
             imglink.LoadImageIntoTexture(texture);
             spr = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
             spriteList.Add(spr);
-            imgLinkList.Add(url);
         }
         cargarimgs(spriteList, imgLinkList);
     }

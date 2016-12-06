@@ -112,19 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Delegates: []
   delegates: []
 --- !u!114 &114000013313243536
 MonoBehaviour:
@@ -153,6 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb260d8c96231374b848e90572a332e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imglink: 
 --- !u!114 &114000013995979004
 MonoBehaviour:
   m_ObjectHideFlags: 1
