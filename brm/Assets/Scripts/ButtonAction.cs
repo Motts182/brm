@@ -3,8 +3,9 @@
 public class ButtonAction : MonoBehaviour
 {
 
-    public void riverSceneRandom()
+    public void riverSceneRandom(string hashtag)
     {
+        GameObject.Find("GameController").GetComponent<GameControllerScript>().hashtag = hashtag;
         if (GameObject.FindGameObjectWithTag("SceneChanger") != null)
         {
             GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene(Random.Range(0, 5).ToString());
@@ -49,6 +50,7 @@ public class ButtonAction : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("SceneChanger") != null)
         {
+            GameObject.Find("GameController").GetComponent<GameControllerScript>().videoLink = GetComponent<WordCanvasScript>().videoLink;
             GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().cinemaScene();
         }
         else

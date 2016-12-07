@@ -249,7 +249,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2132423139}
-        m_MethodName: returntoSphere
+        m_MethodName: sphereScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -341,7 +341,11 @@ Prefab:
       objectReference: {fileID: 1016165170}
     - target: {fileID: 11400000, guid: f0082db35c5d5614f9e8c63a7f86aa4e, type: 2}
       propertyPath: m_strFileName
-      value: mdmtest.mp4
+      value: hqIsc8ooXug
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f0082db35c5d5614f9e8c63a7f86aa4e, type: 2}
+      propertyPath: m_bAutoPlay
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0082db35c5d5614f9e8c63a7f86aa4e, type: 2}
@@ -704,6 +708,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1382547623 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: f0082db35c5d5614f9e8c63a7f86aa4e, type: 2}
+  m_PrefabInternal: {fileID: 257397211}
+--- !u!114 &1382547628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382547623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be5fc808cb24ec41a654d1cfd0d7e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  youtubeVideoIdOrUrl: hqIsc8ooXug
+--- !u!114 &1382547629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382547623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e3f951688ed46498bfbcf9cd7fc1e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drawBackground: 0
+  backgroundImage: {fileID: 2800000, guid: 287c03c6d699e4b64ad84fdebdd382a6, type: 3}
 --- !u!1 &1963997458
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,10 +10,10 @@ public class CanvasSpawner : MonoBehaviour
     public GameObject wordPrefab;
     public void spawnWords()
     {
-        var numPoints = 52;
+        var numPoints = 26;
         for (var pointNum = 0; pointNum < numPoints; pointNum++)
         {
-            float radius = 3f;
+            float radius = 4f;
             var i = (pointNum * 1.0) / numPoints;
             float angle = (float)(i * Mathf.PI * 2);
             var x = Mathf.Sin(angle) * radius;

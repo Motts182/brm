@@ -6,9 +6,6 @@ using UnityEngine.UI;
 
 public class GameControllerScript : MonoBehaviour
 {
-
-    //[SerializeField]
-    //BrowserLogin loginRef;
     public string userToken;
     public string hashtag;
     string url;
@@ -16,14 +13,15 @@ public class GameControllerScript : MonoBehaviour
     string minLength;
     public JsonData data;
     List<string> imgLinkList = new List<string>();
+    public string videoLink;
 
     void Start()
     {
         DontDestroyOnLoad(gameObject);
         if (GameObject.Find("ImageSpawner") != null)
         {
-            RequestByHashtag("snow");
-        };
+            RequestByHashtag(hashtag);
+        }
     }
 
     public void RequestByHashtag(string hashtag)

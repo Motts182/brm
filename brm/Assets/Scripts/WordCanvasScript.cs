@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WordCanvasScript : MonoBehaviour
 {
+    public string videoLink;
 
     void Start()
     {
