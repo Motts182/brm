@@ -28,5 +28,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-brm/Library/
+brm/Library/ShaderCache/
+brm/Library/metadata/
 brm/Temp/

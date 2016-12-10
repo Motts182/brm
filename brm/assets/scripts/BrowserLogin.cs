@@ -25,7 +25,7 @@ public class BrowserLogin : MonoBehaviour
         nextBtn.SetActive(false);
         profilePic.SetActive(false);
         panelPic.SetActive(false);
-        panelLogin.SetActive(true);
+        //panelLogin.SetActive(true);
     }
 
     public void InstagramLogin()
@@ -35,6 +35,7 @@ public class BrowserLogin : MonoBehaviour
         options.pageTitle = "Instagram Login";
         options.hidesTopBar = true;
         InAppBrowser.OpenURL(igPage, options);
+        GameObject.Find("VideoManager").GetComponent<LoginVideoLoop>().pauseVideo();
     }
 
     public IEnumerator closeBrowserAfterXSec(int x)
