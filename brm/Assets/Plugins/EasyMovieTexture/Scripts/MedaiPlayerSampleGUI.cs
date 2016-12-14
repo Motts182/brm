@@ -25,7 +25,7 @@ public class MedaiPlayerSampleGUI : MonoBehaviour {
 	
 		if( GUI.Button(new Rect(50,50,100,100),"Load"))
 		{
-			scrMedia.Load("EasyMovieTexture.mp4");
+			scrMedia.Load("CONTINUE.mp4");
 			m_bFinish = false;
 		}
 		
