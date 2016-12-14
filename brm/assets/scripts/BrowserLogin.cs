@@ -8,7 +8,7 @@ public class BrowserLogin : MonoBehaviour
 
     string clientID = "78d3e74cb7b646fab70a8e381c2d487a";
     string redirectUri = "http://www.brm.com.co/themes/site_themes/brm_site/default_site/Site_brm.group/img/logo.png";
-    private string userToken;
+    public string userToken;
     string igPage;
     public Text loginMessage;
     public GameObject loginBtn;
@@ -16,6 +16,7 @@ public class BrowserLogin : MonoBehaviour
     public GameObject profilePic;
     public GameObject videoManagerLogin;
     public GameObject videoManagerContinue;
+    public GameObject loadingWidget;
 
     void Awake()
     {
@@ -43,6 +44,7 @@ public class BrowserLogin : MonoBehaviour
 
     public IEnumerator getProfilePicture()
     {
+        loadingWidget.SetActive(true);
         WWW request = new WWW("https://api.instagram.com/v1/users/self/?access_token=" + userToken);
         yield return request;
         JsonData data = JsonMapper.ToObject(request.text);
@@ -51,13 +53,20 @@ public class BrowserLogin : MonoBehaviour
         Texture2D picTexture = new Texture2D(1, 1);
         request2.LoadImageIntoTexture(picTexture);
         Sprite picSprite = Sprite.Create(picTexture, new Rect(0, 0, picTexture.width, picTexture.height), new Vector2(0.5f, 0.5f));
-        profilePic.GetComponent<Material>().mainTexture = picTexture;
-        //profilePic.SetActive(true);
+        //profilePic.GetComponent<GUITexture>().texture = picTexture;
+        profilePic.GetComponent<Image>().sprite = picSprite;
         videoManagerLogin.SetActive(false);
         videoManagerContinue.SetActive(true);
+        yield return new WaitForSeconds(2);
+        loadingWidget.SetActive(false);
+        profilePic.SetActive(true);
         loginMessage.text = "Welcome, " + data["data"]["full_name"].ToString() + " !";
     }
 
+    public void getpp()
+    {
+        StartCoroutine(getProfilePicture());
+    }
     void GetToken()
     {
         if (userToken != null)

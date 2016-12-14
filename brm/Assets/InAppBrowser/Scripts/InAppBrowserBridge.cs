@@ -44,7 +44,6 @@ public class InAppBrowserBridge : MonoBehaviour
             browser.StartCoroutine(browser.closeBrowserAfterXSec(1));
             browser.loginBtn.SetActive(false);
             browser.nextBtn.SetActive(true);
-
         }
         onBrowserFinishedLoading.Invoke(url);
     }
