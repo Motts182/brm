@@ -36,9 +36,6 @@ public class SceneChanger : MonoBehaviour
             case "4":
                 SceneManager.LoadScene("ImageRiver3");
                 break;
-            case "5":
-                SceneManager.LoadScene("ImageRiver4");
-                break;
             default:
                 Debug.Log("ERROR LOADING RIVER");
                 break;
