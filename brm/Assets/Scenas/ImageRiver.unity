@@ -766,13 +766,13 @@ Prefab:
     - target: {fileID: 114000010011728584, guid: 9a09cad1778fe1341a9f26e5f3375983,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: sphereScene
       objectReference: {fileID: 0}
     - target: {fileID: 114000010011728584, guid: 9a09cad1778fe1341a9f26e5f3375983,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 640981036}
+      objectReference: {fileID: 640981041}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a09cad1778fe1341a9f26e5f3375983, type: 2}
   m_IsPrefabParent: 0
@@ -1107,8 +1107,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640981036}
-        m_MethodName: 
+      - m_Target: {fileID: 640981041}
+        m_MethodName: sphereScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
