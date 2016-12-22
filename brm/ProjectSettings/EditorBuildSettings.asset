@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenas/ImageRiver2.unity
   - enabled: 1
     path: Assets/Scenas/ImageRiver3.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenas/ImageRiver4.unity
   - enabled: 1
     path: Assets/Scenas/CinemaYoutubeScene.unity

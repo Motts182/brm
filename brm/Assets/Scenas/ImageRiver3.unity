@@ -525,7 +525,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Return to sphere
+  m_Text: 
 --- !u!222 &463138251
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1744,6 +1744,17 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: sphereScene
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011228711540, guid: 9a09cad1778fe1341a9f26e5f3375983,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010410836784, guid: 9a09cad1778fe1341a9f26e5f3375983,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 10d8e3513d17e9d49b910f71cdd23fbd,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a09cad1778fe1341a9f26e5f3375983, type: 2}
   m_IsPrefabParent: 0
@@ -2139,7 +2150,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 10d8e3513d17e9d49b910f71cdd23fbd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

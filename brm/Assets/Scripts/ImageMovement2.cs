@@ -34,7 +34,7 @@ public class ImageMovement2 : MonoBehaviour
     {
         if (rotate)
         {
-            transform.Rotate(0, Time.time * Random.Range(0f, 1f), 0);
+            transform.Rotate(0, Time.time * Random.Range(0f, 0.5f), 0);
         }
         else
         {

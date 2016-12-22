@@ -217,7 +217,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Return to sphere
+  m_Text: 
 --- !u!222 &463138251
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -773,6 +773,17 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 640981041}
+    - target: {fileID: 114000010410836784, guid: 9a09cad1778fe1341a9f26e5f3375983,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 10d8e3513d17e9d49b910f71cdd23fbd,
+        type: 3}
+    - target: {fileID: 114000011228711540, guid: 9a09cad1778fe1341a9f26e5f3375983,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a09cad1778fe1341a9f26e5f3375983, type: 2}
   m_IsPrefabParent: 0
@@ -1140,7 +1151,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 10d8e3513d17e9d49b910f71cdd23fbd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1283,58 +1294,6 @@ Transform:
   m_Father: {fileID: 1826201679}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2074354329
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 422.5669
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 209.99158
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014269215670, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010711926904, guid: 08d12e3e26e76624e9c633aa3d28c4b6,
-        type: 2}
-      propertyPath: userToken
-      value: 253353173.78d3e74.9ef5e612dd4c40bca3436f72443e0147
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010711926904, guid: 08d12e3e26e76624e9c633aa3d28c4b6,
-        type: 2}
-      propertyPath: hashtag
-      value: music
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 08d12e3e26e76624e9c633aa3d28c4b6, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2123756399
 GameObject:
   m_ObjectHideFlags: 0

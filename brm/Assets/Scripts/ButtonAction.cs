@@ -15,6 +15,17 @@ public class ButtonAction : MonoBehaviour
             print("No hay SceneChanger");
         }
     }
+    public void riverSceneRandom()
+    {
+        if (GameObject.FindGameObjectWithTag("SceneChanger") != null)
+        {
+            GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene(Random.Range(1, 4).ToString());
+        }
+        else
+        {
+            print("No hay SceneChanger");
+        }
+    }
 
     public void sphereScene()
     {
