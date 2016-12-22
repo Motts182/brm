@@ -47,7 +47,7 @@ public class ImgSpawner : MonoBehaviour
 			img.GetComponent<ImageScript> ().imglink = imgLinkList [l];
 			img.transform.SetParent (this.transform);
 		}
-		yield return new WaitForSeconds (10f);
+		yield return new WaitForSeconds (5f);
 		StartCoroutine (Spawn ());
 
 	}

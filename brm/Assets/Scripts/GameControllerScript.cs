@@ -27,7 +27,6 @@ public class GameControllerScript : MonoBehaviour
 
     public void RequestByHashtag(string hashtag)
     {
-        Debug.LogError("requestbyhashtag");
         url = "https://api.instagram.com/v1/tags/" + hashtag + "/media/recent?access_token=" + userToken;
         WWW www = new WWW(url);
         StartCoroutine(WaitforRequest(www));
@@ -35,7 +34,6 @@ public class GameControllerScript : MonoBehaviour
 
     public IEnumerator WaitforRequest(WWW www)
     {
-        Debug.LogError("WaitforRequest");
         yield return www;
         if (www.error == null)
         {
@@ -49,7 +47,6 @@ public class GameControllerScript : MonoBehaviour
 
     public void JSONParse(WWW www)
     {
-        Debug.LogError("JSONPARSE");
         data = JsonMapper.ToObject(www.text);
         List<string> listaURLS = new List<string>();
         for (int i = 0; i < 10/*data["data"].Count*/; i++)
@@ -62,7 +59,6 @@ public class GameControllerScript : MonoBehaviour
 
     public IEnumerator cargarListaSprites(List<string> urlList)
     {
-        Debug.LogError("cargarlistaSprites");
         List<Sprite> spriteList = new List<Sprite>();
         Sprite spr;
         foreach (string url in urlList)
@@ -79,7 +75,6 @@ public class GameControllerScript : MonoBehaviour
 
     public void cargarimgs(List<Sprite> spriteList, List<string> imgLinkList)
     {
-        Debug.LogError("cargarImgs");
         var imgspawner = GameObject.Find("ImageSpawner").GetComponent<ImgSpawner>();
         imgspawner.spriteList = spriteList;
         imgspawner.imgLinkList = imgLinkList;

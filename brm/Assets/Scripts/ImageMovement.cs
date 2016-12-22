@@ -16,6 +16,10 @@ public class ImageMovement : MonoBehaviour
         image = GetComponentInChildren<Image>();
     }
 
+     void Update()
+    {
+        transform.LookAt(2 * transform.position - GameObject.FindGameObjectWithTag("MainCamera").transform.position);
+    }
     void Start()
     {
         iTween.FadeTo(gameObject, iTween.Hash(
@@ -35,8 +39,7 @@ public class ImageMovement : MonoBehaviour
                                                 "path", iTweenPath.GetPath(ImgPath),
                                                 "time", 10f,
                                                 "loopType", "loop",
-                                                "easetype", iTween.EaseType.easeInOutSine,
-                                                "looktarget", GameObject.FindGameObjectWithTag("MainCamera").transform
+                                                "easetype", iTween.EaseType.easeInOutSine
                                                 ));
     }
 

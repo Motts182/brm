@@ -8,12 +8,12 @@ public class ImageScript : MonoBehaviour
 
     public void imagePausePath()
     {
-        iTween.Pause();
+        //iTween.Pause();
     }
 
     public void imageResumePath()
     {
-        iTween.Resume();
+        //iTween.Resume();
     }
 
     public IEnumerator likethatshit()
