@@ -1405,6 +1405,7 @@ MonoBehaviour:
   spriteList: []
   imgLinkList: []
   spawnPoints: []
+  GameControllerRef: {fileID: 0}
 --- !u!1 &1113738064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,7 +1754,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 10d8e3513d17e9d49b910f71cdd23fbd,
+      objectReference: {fileID: 21300000, guid: 9809eda1554368048ad65d58474be6e5,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a09cad1778fe1341a9f26e5f3375983, type: 2}
@@ -2150,7 +2151,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 10d8e3513d17e9d49b910f71cdd23fbd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9809eda1554368048ad65d58474be6e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

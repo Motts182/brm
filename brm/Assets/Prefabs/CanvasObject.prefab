@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 222000011402179140}
   - component: {fileID: 114000013581551160}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WordText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 222000012711785810}
   - component: {fileID: 114000010910533838}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WordText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 222000010429063814}
   - component: {fileID: 114000011048369156}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WordText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 222000013549484252}
   - component: {fileID: 114000010800345674}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WordText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 222000011180032700}
   - component: {fileID: 114000010169053626}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WordText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 222000011738231804}
   - component: {fileID: 114000012877378046}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WordText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 222000011528622756}
   - component: {fileID: 114000012869548998}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WordText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 222000013168573004}
   - component: {fileID: 114000014032038692}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WordText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 114053154209583544}
   m_Layer: 0
   m_Name: CanvasObject
-  m_TagString: Untagged
+  m_TagString: WordCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 222000012247101708}
   - component: {fileID: 114000011996495550}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WordText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 222000011664658552}
   - component: {fileID: 114000011752922834}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WordText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,7 +416,6 @@ GameObject:
   - component: {fileID: 224056897567622038}
   - component: {fileID: 222465399393387470}
   - component: {fileID: 114298146216819956}
-  - component: {fileID: 114342225484435090}
   m_Layer: 5
   m_Name: VideoPanel
   m_TagString: Untagged
@@ -435,7 +434,7 @@ GameObject:
   - component: {fileID: 222656889584995734}
   - component: {fileID: 114433599513350080}
   - component: {fileID: 114898321768740388}
-  - component: {fileID: 114331197512421240}
+  - component: {fileID: 114844529072053084}
   m_Layer: 5
   m_Name: Boton Video
   m_TagString: Word
@@ -454,7 +453,7 @@ GameObject:
   - component: {fileID: 222561216768770798}
   - component: {fileID: 114548264755056712}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PersonaText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -510,14 +509,14 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3a8fa7c44a92dc64b869df94314b5b89, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
+    m_BestFit: 1
+    m_MinSize: 15
     m_MaxSize: 52
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: WORD
 --- !u!114 &114000010428046802
@@ -608,8 +607,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114053154209583544}
-        m_MethodName: riverSceneRandom
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -643,14 +642,14 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3a8fa7c44a92dc64b869df94314b5b89, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
+    m_BestFit: 1
+    m_MinSize: 15
     m_MaxSize: 52
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: WORD
 --- !u!114 &114000010860907426
@@ -693,14 +692,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114053154209583544}
-        m_MethodName: riverSceneRandom
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: innovation
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -728,14 +727,14 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3a8fa7c44a92dc64b869df94314b5b89, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
+    m_BestFit: 1
+    m_MinSize: 15
     m_MaxSize: 52
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: WORD
 --- !u!114 &114000011048369156
@@ -761,14 +760,14 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3a8fa7c44a92dc64b869df94314b5b89, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
+    m_BestFit: 1
+    m_MinSize: 15
     m_MaxSize: 52
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: WORD
 --- !u!114 &114000011058198808
@@ -878,8 +877,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114053154209583544}
-        m_MethodName: riverSceneRandom
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -930,8 +929,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114053154209583544}
-        m_MethodName: riverSceneRandom
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1062,14 +1061,14 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3a8fa7c44a92dc64b869df94314b5b89, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
+    m_BestFit: 1
+    m_MinSize: 15
     m_MaxSize: 52
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: WORD
 --- !u!114 &114000011976558668
@@ -1108,14 +1107,14 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3a8fa7c44a92dc64b869df94314b5b89, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
+    m_BestFit: 1
+    m_MinSize: 15
     m_MaxSize: 52
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: WORD
 --- !u!114 &114000012168576758
@@ -1171,8 +1170,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114053154209583544}
-        m_MethodName: riverSceneRandom
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1236,8 +1235,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114053154209583544}
-        m_MethodName: riverSceneRandom
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1284,14 +1283,14 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3a8fa7c44a92dc64b869df94314b5b89, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
+    m_BestFit: 1
+    m_MinSize: 15
     m_MaxSize: 52
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: WORD
 --- !u!114 &114000012877378046
@@ -1317,14 +1316,14 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3a8fa7c44a92dc64b869df94314b5b89, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
+    m_BestFit: 1
+    m_MinSize: 15
     m_MaxSize: 52
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: WORD
 --- !u!114 &114000012982649830
@@ -1380,8 +1379,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114053154209583544}
-        m_MethodName: riverSceneRandom
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1459,8 +1458,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114053154209583544}
-        m_MethodName: riverSceneRandom
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1507,14 +1506,14 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3a8fa7c44a92dc64b869df94314b5b89, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
+    m_BestFit: 1
+    m_MinSize: 15
     m_MaxSize: 52
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: WORD
 --- !u!114 &114000013728208270
@@ -1557,8 +1556,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114053154209583544}
-        m_MethodName: riverSceneRandom
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1619,14 +1618,14 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 3a8fa7c44a92dc64b869df94314b5b89, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
+    m_BestFit: 1
+    m_MinSize: 15
     m_MaxSize: 52
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: WORD
 --- !u!114 &114000014056722668
@@ -1709,8 +1708,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114053154209583544}
-        m_MethodName: riverSceneRandom
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1811,32 +1810,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114331197512421240
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1568711352808832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 648c5bfaeabf2a24e91be50c9362cfe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 0
-  wordText: {fileID: 0}
---- !u!114 &114342225484435090
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1302209084091456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 648c5bfaeabf2a24e91be50c9362cfe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 0
-  wordText: {fileID: 0}
 --- !u!114 &114433599513350080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1884,19 +1857,31 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 3dcbe7f3099c2564595ce800f0f9fcca, type: 3}
+    m_Font: {fileID: 12800000, guid: 3a8fa7c44a92dc64b869df94314b5b89, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: nombre
+--- !u!114 &114844529072053084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1568711352808832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdb892efcb3248342947e8435244a143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wordText: {fileID: 114548264755056712}
 --- !u!114 &114898321768740388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2123,7 +2108,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 375}
-  m_SizeDelta: {x: 80, y: 40}
+  m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000010254429502
 RectTransform:
@@ -2142,7 +2127,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -625}
-  m_SizeDelta: {x: 80, y: 40}
+  m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000010407749518
 RectTransform:
@@ -2161,7 +2146,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -250}
-  m_SizeDelta: {x: 80, y: 40}
+  m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000010495608400
 RectTransform:
@@ -2252,7 +2237,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -375}
-  m_SizeDelta: {x: 80, y: 40}
+  m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000011150394628
 RectTransform:
@@ -2289,7 +2274,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 500}
-  m_SizeDelta: {x: 80, y: 40}
+  m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000011351071250
 RectTransform:
@@ -2308,7 +2293,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 625}
-  m_SizeDelta: {x: 80, y: 40}
+  m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000012570371070
 RectTransform:
@@ -2361,8 +2346,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0020542145, y: -0.001829505}
+  m_SizeDelta: {x: -0.004108429, y: 0.00365901}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013457296952
 RectTransform:
@@ -2381,7 +2366,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 125}
-  m_SizeDelta: {x: 80, y: 40}
+  m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013564679974
 RectTransform:
@@ -2436,7 +2421,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 250}
-  m_SizeDelta: {x: 80, y: 40}
+  m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013965988536
 RectTransform:
@@ -2455,7 +2440,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -125}
-  m_SizeDelta: {x: 80, y: 40}
+  m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000014033736534
 RectTransform:
@@ -2504,7 +2489,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -500}
-  m_SizeDelta: {x: 80, y: 40}
+  m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224056897567622038
 RectTransform:
@@ -2514,7 +2499,7 @@ RectTransform:
   m_GameObject: {fileID: 1302209084091456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 5}
-  m_LocalScale: {x: 0.5, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.7942222, y: 0.079422206, z: 1.5884441}
   m_Children: []
   m_Father: {fileID: 224000014033736534}
   m_RootOrder: 10
@@ -2559,5 +2544,5 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 16.7}
-  m_SizeDelta: {x: 100.9, y: 57.53}
+  m_SizeDelta: {x: 175, y: 57.53}
   m_Pivot: {x: 0.5, y: 0.5}

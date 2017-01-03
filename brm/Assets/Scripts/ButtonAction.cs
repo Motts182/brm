@@ -1,19 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class ButtonAction : MonoBehaviour
 {
 
-    public void riverSceneRandom(string hashtag)
+    public UnityAction riverSceneRandom(string hashtag)
     {
         GameObject.Find("GameController").GetComponent<GameControllerScript>().hashtag = hashtag;
         if (GameObject.FindGameObjectWithTag("SceneChanger") != null)
         {
-            GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene(Random.Range(0, 5).ToString());
+            GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene(Random.Range(1, 4).ToString());
         }
         else
         {
             print("No hay SceneChanger");
         }
+        return null;
     }
     public void riverSceneRandom()
     {

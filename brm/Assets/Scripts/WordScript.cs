@@ -11,20 +11,15 @@ public class WordScript : MonoBehaviour
     float distance;
     Vector3 camRef;
     public Text wordText;
-
     void Awake()
     {
         camRef = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
-    }
-
-    void Start()
-    {
         wordText = GetComponentInChildren<Text>();
         if (wordText != null)
         {
             wordText.fontSize = 25;
-            wordText.text = "|" + Random.Range(1234567890, 2000000000).ToString() + "|";
         }
+        GetComponent<Button>().onClick.AddListener(() => { GameObject.Find("CanvasObject(Clone)").GetComponent<ButtonAction>().riverSceneRandom(wordText.text); });
     }
 
     void Update()

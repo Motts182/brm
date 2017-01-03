@@ -7,6 +7,7 @@ TagManager:
   - Word
   - SceneChanger
   - SpawnPoint
+  - WordCanvas
   layers:
   - Default
   - TransparentFX
