@@ -15,10 +15,6 @@ public class WordScript : MonoBehaviour
     {
         camRef = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
         wordText = GetComponentInChildren<Text>();
-        if (wordText != null)
-        {
-            wordText.fontSize = 25;
-        }
         GetComponent<Button>().onClick.AddListener(() => { GameObject.Find("CanvasObject(Clone)").GetComponent<ButtonAction>().riverSceneRandom(wordText.text); });
     }
 

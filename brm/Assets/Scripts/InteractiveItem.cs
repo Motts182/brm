@@ -38,12 +38,10 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 // aca va la real mecanica española, hay que tener en cuenta que van a haber acciones distintas que se van a accionar de la misma forma y aca no esta contemplado.
                 if (gameObject.tag == "ImgPrefab")
                 {
-
                     Debug.Log("He seleccionado una imagen");
-
-
                 }
-                else if (gameObject.tag == "ReturnCanvas") {
+                else if (gameObject.tag == "ReturnCanvas")
+                {
 
                     gameObject.GetComponent<ButtonAction>().sphereScene();
                     Debug.Log("He seleccionado el boton de regreso");
@@ -53,11 +51,15 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
                     gameObject.GetComponent<ButtonAction>().exit();
                     Debug.Log("He seleccionado el boton de Exit");
                 }
-                /*else if (gameObject.tag == "VideoPanel")
+                else if (gameObject.tag == "VideoPanel")
                 {
                     Debug.Log(gameObject.tag);
-                     gameObject.GetComponent<ButtonAction>().cinemaScene();
-                }*/
+                    transform.transform.parent.parent.GetComponent<ButtonAction>().cinemaScene();
+                }
+                else if (gameObject.tag == "Word") {
+                    print(gameObject.tag);
+                    gameObject.transform.parent.parent.GetComponent<ButtonAction>().riverSceneRandom(gameObject.GetComponentInChildren<WordScript>().wordText.text);
+                }
 
             }
         }
@@ -71,7 +73,7 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        
+
         isEntered = true;
     }
 
@@ -81,7 +83,7 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerExit(PointerEventData eventData)
     {
-       
+
         isEntered = false;
         progressImage.fillAmount = 0;
     }

@@ -10,6 +10,7 @@ public class BrowserLogin : MonoBehaviour
     string redirectUri = "http://www.brm.com.co/themes/site_themes/brm_site/default_site/Site_brm.group/img/logo.png";
     public string userToken;
     string igPage;
+    string preroutedtoken = "1474921476.78d3e74.533f9347905f4746bf2147d151c48049";
     public Text loginMessage;
     public GameObject loginBtn;
     public GameObject nextBtn;
