@@ -12,7 +12,6 @@ public class ImgSpawner : MonoBehaviour
     public List<Sprite> spriteList = new List<Sprite>();
     public List<string> imgLinkList = new List<string>();
     public List<GameObject> spawnPoints = new List<GameObject>();
-    public GameObject GameControllerRef;
     GameControllerScript GCsc;
 
     private void Awake()
@@ -43,7 +42,6 @@ public class ImgSpawner : MonoBehaviour
 				
 				img.GetComponent<ImageMovement> ().ImgPath = "ImagePath" + i;
 			}
-
 			img.GetComponent<ImageScript> ().imglink = imgLinkList [l];
 			img.transform.SetParent (this.transform);
 		}

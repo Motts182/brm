@@ -3,6 +3,7 @@ using System.Collections;
 using LitJson;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameControllerScript : MonoBehaviour
 {
@@ -22,6 +23,13 @@ public class GameControllerScript : MonoBehaviour
         {
             hashtag = "innovation";
             RequestByHashtag(hashtag);
+        }
+        if(userToken != null || userToken != "")
+        {
+            if(SceneManager.GetActiveScene().name == "login")
+            {
+                SceneManager.LoadScene("SphereScene");
+            }
         }
     }
 
@@ -49,7 +57,7 @@ public class GameControllerScript : MonoBehaviour
     {
         data = JsonMapper.ToObject(www.text);
         List<string> listaURLS = new List<string>();
-        for (int i = 0; i < 10/*data["data"].Count*/; i++)
+        for (int i = 0; i < data["data"].Count; i++)
         {
             listaURLS.Add(data["data"][i]["images"]["standard_resolution"]["url"].ToString());
             imgLinkList.Add(data["data"][i]["link"].ToString());
