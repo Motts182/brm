@@ -16,7 +16,7 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
     {
 
         rt = GetComponent<RectTransform>();
-
+        progressImage = GameObject.FindGameObjectWithTag("MainCamera").GetComponentInChildren<Image>();
     }
 
     float GazeActivationTime = 5;
