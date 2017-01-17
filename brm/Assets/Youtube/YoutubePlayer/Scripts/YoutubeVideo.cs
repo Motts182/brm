@@ -11,7 +11,6 @@ using System.Net.Security;
 public class YoutubeVideo : MonoBehaviour {
 
     public static YoutubeVideo Instance;
-
     void Awake()
     {
         Instance = this;
