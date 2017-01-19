@@ -551,6 +551,7 @@ MonoBehaviour:
   spriteList: []
   imgLinkList: []
   spawnPoints: []
+  loadingBar: {fileID: 1535332255}
 --- !u!1 &1113738064
 GameObject:
   m_ObjectHideFlags: 0

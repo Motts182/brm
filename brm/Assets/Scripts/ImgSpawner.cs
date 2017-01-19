@@ -13,7 +13,7 @@ public class ImgSpawner : MonoBehaviour
     public List<string> imgLinkList = new List<string>();
     public List<GameObject> spawnPoints = new List<GameObject>();
     GameControllerScript GCsc;
-
+    public GameObject loadingBar;
     private void Awake()
     {
         if (GameObject.FindGameObjectsWithTag("SpawnPoint") != null) {
@@ -45,6 +45,7 @@ public class ImgSpawner : MonoBehaviour
 			img.GetComponent<ImageScript> ().imglink = imgLinkList [l];
 			img.transform.SetParent (this.transform);
 		}
+        loadingBar.SetActive(false);
 		yield return new WaitForSeconds (5f);
 		StartCoroutine (Spawn ());
 
