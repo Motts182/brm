@@ -6,12 +6,12 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public Image progressImage; // add an image as child to your button object and set its image type to Filled. Assign it to this field in inspector.
+    Image progressImage; // add an image as child to your button object and set its image type to Filled. Assign it to this field in inspector.
     public bool isEntered = false;
     RectTransform rt;
     float timeElapsed;
     Image cursor;
-    // Use this for initialization
+
     void Awake()
     {
 
@@ -19,7 +19,7 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
         progressImage = GameObject.FindGameObjectWithTag("MainCamera").GetComponentInChildren<Image>();
     }
 
-    float GazeActivationTime = 5;
+    float GazeActivationTime = 3;
 
     void Update()
     {
@@ -27,14 +27,11 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
         {
             timeElapsed += Time.deltaTime;
             progressImage.fillAmount = Mathf.Clamp(timeElapsed / GazeActivationTime, 0, 1);
-            //Debug.Log(progressImage.fillAmount);
             if (timeElapsed >= GazeActivationTime)
             {
                 timeElapsed = 0;
-                Debug.Log("Action Selected");
                 progressImage.fillAmount = 0;
                 isEntered = false;
-                Debug.Log(gameObject.tag);
                 // aca va la real mecanica española, hay que tener en cuenta que van a haber acciones distintas que se van a accionar de la misma forma y aca no esta contemplado.
                 if (gameObject.tag == "ImgPrefab")
                 {
@@ -44,7 +41,6 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 {
 
                     gameObject.GetComponent<ButtonAction>().sphereScene();
-                    Debug.Log("He seleccionado el boton de regreso");
                 }
                 else if (gameObject.tag == "ExitCanvas")
                 {
@@ -53,11 +49,10 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 }
                 else if (gameObject.tag == "VideoPanel")
                 {
-                    Debug.Log(gameObject.tag);
                     transform.transform.parent.parent.GetComponent<ButtonAction>().cinemaScene();
                 }
-                else if (gameObject.tag == "Word") {
-                    print(gameObject.tag);
+                else if (gameObject.tag == "Word")
+                {
                     gameObject.transform.parent.parent.GetComponent<ButtonAction>().riverSceneRandom(gameObject.GetComponentInChildren<WordScript>().wordText.text);
                 }
 

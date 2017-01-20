@@ -211,10 +211,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013363359940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2b2e388984b1b488da73349dfa2a71, type: 3}
+  m_Script: {fileID: 11500000, guid: 1aa1d0430f947654c8fd70a4bc89bf7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressImage: {fileID: 0}
   isEntered: 0
 --- !u!114 &114140796547587206
 MonoBehaviour:

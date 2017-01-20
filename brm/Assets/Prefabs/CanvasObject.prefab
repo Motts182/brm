@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114000013377767822}
   - component: {fileID: 114000013454083598}
   - component: {fileID: 114000013468010444}
-  - component: {fileID: 114366917912082978}
+  - component: {fileID: 114721273356200480}
   m_Layer: 5
   m_Name: WordButton (3)
   m_TagString: Word
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 114000011410467114}
   - component: {fileID: 114000013728208270}
   - component: {fileID: 114000014056722668}
-  - component: {fileID: 114442782590522450}
+  - component: {fileID: 114409953561692594}
   m_Layer: 5
   m_Name: WordButton (9)
   m_TagString: Word
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 114000013864945526}
   - component: {fileID: 114000013270525800}
   - component: {fileID: 114000012509483500}
-  - component: {fileID: 114615188043403834}
+  - component: {fileID: 114330035296778572}
   m_Layer: 5
   m_Name: WordButton (6)
   m_TagString: Word
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 114000014132762896}
   - component: {fileID: 114000014105311554}
   - component: {fileID: 114000010079565672}
-  - component: {fileID: 114731431894015788}
+  - component: {fileID: 114390663380719766}
   m_Layer: 5
   m_Name: WordButton (2)
   m_TagString: Word
@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 114000011738368612}
   - component: {fileID: 114000010722724708}
   - component: {fileID: 114000012982649830}
-  - component: {fileID: 114059402154295182}
+  - component: {fileID: 114033353477967682}
   m_Layer: 5
   m_Name: WordButton (1)
   m_TagString: Word
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 114000010428046802}
   - component: {fileID: 114000012365822938}
   - component: {fileID: 114000011976558668}
-  - component: {fileID: 114545961271440430}
+  - component: {fileID: 114204536657306842}
   m_Layer: 5
   m_Name: WordButton (7)
   m_TagString: Word
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 114000011077493960}
   - component: {fileID: 114000011190574222}
   - component: {fileID: 114000012687680014}
-  - component: {fileID: 114638963843729182}
+  - component: {fileID: 114932812096477392}
   m_Layer: 5
   m_Name: WordButton (4)
   m_TagString: Word
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 114000011537143616}
   - component: {fileID: 114000011103416660}
   - component: {fileID: 114000012168576758}
-  - component: {fileID: 114784921550341410}
+  - component: {fileID: 114659769652507216}
   m_Layer: 5
   m_Name: WordButton (5)
   m_TagString: Word
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 114000014077009020}
   - component: {fileID: 114000012595095926}
   - component: {fileID: 114000011101692234}
-  - component: {fileID: 114744008161981440}
+  - component: {fileID: 114554992004445326}
   m_Layer: 5
   m_Name: WordButton (8)
   m_TagString: Word
@@ -1783,6 +1783,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoLink: H81Mp1OBIGk
+--- !u!114 &114033353477967682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012839446162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa1d0430f947654c8fd70a4bc89bf7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEntered: 0
 --- !u!114 &114033815281322734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1791,10 +1803,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013997086900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2b2e388984b1b488da73349dfa2a71, type: 3}
+  m_Script: {fileID: 11500000, guid: 1aa1d0430f947654c8fd70a4bc89bf7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressImage: {fileID: 0}
   isEntered: 0
 --- !u!114 &114053154209583544
 MonoBehaviour:
@@ -1807,18 +1818,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d6ec553cff2d894f8d0a57907b1f3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114059402154295182
+--- !u!114 &114204536657306842
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012839446162}
+  m_GameObject: {fileID: 1000012934881022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2b2e388984b1b488da73349dfa2a71, type: 3}
+  m_Script: {fileID: 11500000, guid: 1aa1d0430f947654c8fd70a4bc89bf7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressImage: {fileID: 0}
   isEntered: 0
 --- !u!114 &114298146216819956
 MonoBehaviour:
@@ -1847,18 +1857,29 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114366917912082978
+--- !u!114 &114330035296778572
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010294226582}
+  m_GameObject: {fileID: 1000011737824306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2b2e388984b1b488da73349dfa2a71, type: 3}
+  m_Script: {fileID: 11500000, guid: 1aa1d0430f947654c8fd70a4bc89bf7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressImage: {fileID: 0}
+  isEntered: 0
+--- !u!114 &114390663380719766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012002480816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa1d0430f947654c8fd70a4bc89bf7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   isEntered: 0
 --- !u!114 &114397342997270544
 MonoBehaviour:
@@ -1868,10 +1889,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1568711352808832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2b2e388984b1b488da73349dfa2a71, type: 3}
+  m_Script: {fileID: 11500000, guid: 1aa1d0430f947654c8fd70a4bc89bf7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressImage: {fileID: 0}
+  isEntered: 0
+--- !u!114 &114409953561692594
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011515960162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa1d0430f947654c8fd70a4bc89bf7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   isEntered: 0
 --- !u!114 &114433599513350080
 MonoBehaviour:
@@ -1900,32 +1932,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114442782590522450
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011515960162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2b2e388984b1b488da73349dfa2a71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressImage: {fileID: 0}
-  isEntered: 0
---- !u!114 &114545961271440430
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012934881022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2b2e388984b1b488da73349dfa2a71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressImage: {fileID: 0}
-  isEntered: 0
 --- !u!114 &114548264755056712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1959,46 +1965,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: nombre
---- !u!114 &114615188043403834
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011737824306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2b2e388984b1b488da73349dfa2a71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressImage: {fileID: 0}
-  isEntered: 0
---- !u!114 &114638963843729182
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013421034036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2b2e388984b1b488da73349dfa2a71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressImage: {fileID: 0}
-  isEntered: 0
---- !u!114 &114731431894015788
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012002480816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2b2e388984b1b488da73349dfa2a71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressImage: {fileID: 0}
-  isEntered: 0
---- !u!114 &114744008161981440
+--- !u!114 &114554992004445326
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2006,12 +1973,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013546577472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2b2e388984b1b488da73349dfa2a71, type: 3}
+  m_Script: {fileID: 11500000, guid: 1aa1d0430f947654c8fd70a4bc89bf7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressImage: {fileID: 0}
   isEntered: 0
---- !u!114 &114784921550341410
+--- !u!114 &114659769652507216
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2019,10 +1985,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013476042836}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2b2e388984b1b488da73349dfa2a71, type: 3}
+  m_Script: {fileID: 11500000, guid: 1aa1d0430f947654c8fd70a4bc89bf7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressImage: {fileID: 0}
+  isEntered: 0
+--- !u!114 &114721273356200480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010294226582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa1d0430f947654c8fd70a4bc89bf7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   isEntered: 0
 --- !u!114 &114844529072053084
 MonoBehaviour:
@@ -2032,10 +2009,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1568711352808832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d9675995e4426940a57dec26ffdecc2, type: 3}
+  m_Script: {fileID: 11500000, guid: cdb892efcb3248342947e8435244a143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wordText: {fileID: 0}
+  wordText: {fileID: 114548264755056712}
   distance: 0
 --- !u!114 &114898321768740388
 MonoBehaviour:
@@ -2089,6 +2066,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114932812096477392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013421034036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa1d0430f947654c8fd70a4bc89bf7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEntered: 0
 --- !u!222 &222000010429063814
 CanvasRenderer:
   m_ObjectHideFlags: 1

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LoadingBarScript : MonoBehaviour
 {
-        public GameObject loadingbar;
+    public GameObject loadingbar;
     public float timer;
 
     public IEnumerator loading()
@@ -16,6 +16,10 @@ public class LoadingBarScript : MonoBehaviour
     private void Update()
     {
         if (GameObject.FindGameObjectWithTag("ImgPrefab") != null && GameObject.Find("VideoManager") == null)
+        {
+            loadingbar.SetActive(false);
+        }
+        else if (GameObject.FindGameObjectWithTag("WordCanvas")!= null) 
         {
             loadingbar.SetActive(false);
         }
