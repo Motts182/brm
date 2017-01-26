@@ -32,13 +32,8 @@ public class ImageMovement2 : MonoBehaviour
 
     private void Update()
     {
-        if (rotate)
-        {
-            transform.Rotate(0, Time.time * Random.Range(0f, 0.5f), 0);
-        }
-        else
-        {
-            transform.LookAt(2 * transform.position - GameObject.FindGameObjectWithTag("MainCamera").transform.position);
-        }
+
+        transform.LookAt(2 * transform.position - GameObject.FindGameObjectWithTag("MainCamera").transform.position);
+
     }
 }

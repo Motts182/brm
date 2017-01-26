@@ -9,7 +9,7 @@ public class ButtonAction : MonoBehaviour
         GameObject.Find("GameController").GetComponent<GameControllerScript>().hashtag = hashtag;
         if (GameObject.FindGameObjectWithTag("SceneChanger") != null)
         {
-            GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene(Random.Range(1, 4).ToString());
+            GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene(Random.Range(1, 5).ToString());
         }
         else
         {
@@ -21,7 +21,7 @@ public class ButtonAction : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("SceneChanger") != null)
         {
-            GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene(Random.Range(1, 4).ToString());
+            GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().riverScene(Random.Range(1, 5).ToString());
         }
         else
         {

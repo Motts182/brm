@@ -14,6 +14,7 @@ public class ImgSpawner : MonoBehaviour
     public List<GameObject> spawnPoints = new List<GameObject>();
     GameControllerScript GCsc;
     public GameObject loadingBar;
+    [SerializeField]
     int h = 0;
     private void Awake()
     {
@@ -28,13 +29,13 @@ public class ImgSpawner : MonoBehaviour
 
     private void Start()
     {
-        GCsc = GameObject.Find("GameController").GetComponent<GameControllerScript>();
-        GCsc.RequestByHashtag(GCsc.hashtag);
+        //GCsc = GameObject.Find("GameController").GetComponent<GameControllerScript>();
+        //GCsc.RequestByHashtag(GCsc.hashtag);
     }
 
     public IEnumerator Spawn()
     {
-
+       
         for (int i = 0; i < spawnPoints.Count; i++)
         {
 
@@ -51,19 +52,20 @@ public class ImgSpawner : MonoBehaviour
             img.GetComponent<ImageScript>().imglink = imgLinkList[h];
             img.transform.SetParent(this.transform);
             h++;
+            if (h >= spriteList.Count - 1)
+            {
+                h = 0;
+            }
         }
         loadingBar.SetActive(false);
-        if (h >= spriteList.Count)
-        {
-            h = 0;
-        }
+       
         yield return null;
         StartCoroutine(eliminarfotos());
     }
 
     public IEnumerator eliminarfotos()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(9.7f);
         if (GameObject.FindGameObjectsWithTag("ImgPrefab") != null)
         {
             foreach(GameObject go in GameObject.FindGameObjectsWithTag("ImgPrefab"))
