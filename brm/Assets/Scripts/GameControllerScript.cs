@@ -43,7 +43,6 @@ public class GameControllerScript : MonoBehaviour
 
     public IEnumerator WaitforRequest(WWW www)
     {
-        print("WaitforRequest");
         yield return www;
         if (www.error == null)
         {
@@ -57,7 +56,6 @@ public class GameControllerScript : MonoBehaviour
 
     public IEnumerator JSONParse(WWW www)
     {
-        print("JsonParse");
         data = JsonMapper.ToObject(www.text);
         WWW www2 = new WWW(data["pagination"]["next_url"].ToString());
         yield return www2;
@@ -81,7 +79,6 @@ public class GameControllerScript : MonoBehaviour
 
     public IEnumerator cargarListaSprites(List<string> urlList)
     {
-        print("CargarListaSprites");
         List<Sprite> spriteList = new List<Sprite>();
         Sprite spr;
         foreach (string url in urlList)
@@ -98,7 +95,6 @@ public class GameControllerScript : MonoBehaviour
 
     public void cargarimgs(List<Sprite> spriteList, List<string> imgLinkList)
     {
-        print("cargarImgs");
         var imgspawner = GameObject.Find("ImageSpawner").GetComponent<ImgSpawner>();
         imgspawner.spriteList = spriteList;
         imgspawner.imgLinkList = imgLinkList;
