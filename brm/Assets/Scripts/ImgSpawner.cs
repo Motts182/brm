@@ -29,8 +29,8 @@ public class ImgSpawner : MonoBehaviour
 
     private void Start()
     {
-        //GCsc = GameObject.Find("GameController").GetComponent<GameControllerScript>();
-        //GCsc.RequestByHashtag(GCsc.hashtag);
+        GCsc = GameObject.Find("GameController").GetComponent<GameControllerScript>();
+        GCsc.RequestByHashtag(GCsc.hashtag);
     }
 
     public IEnumerator Spawn()

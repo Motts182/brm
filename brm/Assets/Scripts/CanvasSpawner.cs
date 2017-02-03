@@ -97,7 +97,8 @@ public class CanvasSpawner : MonoBehaviour
     }
     public IEnumerator ParseXML()
     {
-        xmlRequest = new WWW("http://abraham.brm.com.co/appbrm/personas.php");
+        xmlRequest = new WWW("http://www.brm.com.co/appbrm/personas.php");
+
         yield return xmlRequest;
         if (xmlRequest.isDone)
         {

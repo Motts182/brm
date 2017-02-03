@@ -23,7 +23,7 @@ public class GameControllerScript : MonoBehaviour
         if (GameObject.Find("ImageSpawner") != null)
         {
             print("start");
-            hashtag = "innovation";
+            //hashtag = "innovation";
             RequestByHashtag(hashtag);
         }
         /*if (userToken != null || userToken != "")
@@ -33,12 +33,17 @@ public class GameControllerScript : MonoBehaviour
                 SceneManager.LoadScene("SphereScene");
             }
         }*/
+
+        if (listaLinkImgs.Count != 0)
+        {
+            listaLinkImgs.Clear();
+            listaURLS.Clear();
+        }
     }
 
     public void RequestByHashtag(string hashtag)
     {
-        print("RQbyHG");
-
+        print("Request by hashtag: " + hashtag);
         url = "https://api.instagram.com/v1/tags/" + hashtag + "/media/recent?access_token=" + userToken;
         WWW www = new WWW(url);
         StartCoroutine(WaitforRequest(www));
