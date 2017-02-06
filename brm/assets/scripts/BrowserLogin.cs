@@ -7,7 +7,7 @@ public class BrowserLogin : MonoBehaviour
 {
 
     string clientID = "78d3e74cb7b646fab70a8e381c2d487a";
-    string redirectUri = "http://www.brm.com.co/themes/site_themes/brm_site/default_site/Site_brm.group/img/logo.png";
+    string redirectUri = "http://blank.org/"; //"http://www.brm.com.co/themes/site_themes/brm_site/default_site/Site_brm.group/img/logo.png";
     public string userToken;
     string igPage;
     string preroutedtoken = "1474921476.78d3e74.533f9347905f4746bf2147d151c48049";
@@ -61,7 +61,7 @@ public class BrowserLogin : MonoBehaviour
         yield return new WaitForSeconds(2);
         loadingWidget.SetActive(false);
         profilePic.SetActive(true);
-        loginMessage.text = "Welcome, " + data["data"]["full_name"].ToString() + " !";
+        loginMessage.text = "Bienvenido, " + data["data"]["full_name"].ToString() + " !";
     }
 
     public void getpp()

@@ -8,6 +8,11 @@ TagManager:
   - SceneChanger
   - SpawnPoint
   - WordCanvas
+  - ExitCanvas
+  - VideoPanel
+  - ReturnCanvas
+  - ImgPrefab
+  - VideoReturnCanvas
   layers:
   - Default
   - TransparentFX

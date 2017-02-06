@@ -119,6 +119,11 @@ Transform:
   m_Father: {fileID: 1826201679}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &241811423 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4157943250246840, guid: d981d21f997e0104fa50f9a40b59b598,
+    type: 2}
+  m_PrefabInternal: {fileID: 1124495679}
 --- !u!1 &385443053
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +444,7 @@ MonoBehaviour:
   imgLinkList: []
   spawnPoints: []
   loadingBar: {fileID: 1535332255}
+  h: 0
 --- !u!1 &1113738064
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +627,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 241811423}
     m_Modifications:
     - target: {fileID: 4355927433225976, guid: 1da7dcf2f5381c147892b931d21846f2, type: 2}
       propertyPath: m_LocalPosition.x
@@ -637,15 +643,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4355927433225976, guid: 1da7dcf2f5381c147892b931d21846f2, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4355927433225976, guid: 1da7dcf2f5381c147892b931d21846f2, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4355927433225976, guid: 1da7dcf2f5381c147892b931d21846f2, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4355927433225976, guid: 1da7dcf2f5381c147892b931d21846f2, type: 2}
       propertyPath: m_LocalRotation.w
@@ -653,10 +659,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4355927433225976, guid: 1da7dcf2f5381c147892b931d21846f2, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114246499100895696, guid: 1da7dcf2f5381c147892b931d21846f2, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1da7dcf2f5381c147892b931d21846f2, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1535332255 stripped
@@ -664,19 +669,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1825436208332210, guid: 1da7dcf2f5381c147892b931d21846f2,
     type: 2}
   m_PrefabInternal: {fileID: 1535332254}
---- !u!114 &1535332256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1535332255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e10f976fcd3ff84e8eab01fcdcffc0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadingbar: {fileID: 1535332255}
-  timer: 0
 --- !u!1 &1570096047
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,7 +967,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9809eda1554368048ad65d58474be6e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c77efd6237ec5f47b4f1ebf4755750c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

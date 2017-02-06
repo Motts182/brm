@@ -57,6 +57,7 @@ public class ImgSpawner : MonoBehaviour
                 h = 0;
             }
         }
+        GameObject.Find("GvrReticle").GetComponent<MeshRenderer>().enabled = true;
         loadingBar.SetActive(false);
        
         yield return null;
@@ -65,7 +66,7 @@ public class ImgSpawner : MonoBehaviour
 
     public IEnumerator eliminarfotos()
     {
-        yield return new WaitForSeconds(9.7f);
+        yield return new WaitForSeconds(15f);
         if (GameObject.FindGameObjectsWithTag("ImgPrefab") != null)
         {
             foreach(GameObject go in GameObject.FindGameObjectsWithTag("ImgPrefab"))

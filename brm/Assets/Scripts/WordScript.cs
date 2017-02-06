@@ -21,7 +21,7 @@ public class WordScript : MonoBehaviour
     void Update()
     {
 
-        if (Vector3.Distance(this.transform.position, camRef) > 3.5f)
+        if (Vector3.Distance(this.transform.position, camRef) > 4f)
         {
             transform.position = Vector3.MoveTowards(transform.position, camRef, 0.05f);
         }

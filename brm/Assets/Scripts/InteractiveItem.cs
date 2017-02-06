@@ -27,6 +27,12 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
         {
             timeElapsed += Time.deltaTime;
             progressImage.fillAmount = Mathf.Clamp(timeElapsed / GazeActivationTime, 0, 1);
+            if (GameObject.Find("LoadingBar") != null && GameObject.Find("LoadingBar").activeInHierarchy == true)
+            {
+                GameObject.Find("LoadingBar").GetComponentInChildren<SpriteRenderer>().enabled = false;
+                GameObject.Find("LoadingBar").GetComponentInChildren<Text>().text = "";
+            }
+
             if (timeElapsed >= GazeActivationTime)
             {
                 timeElapsed = 0;
@@ -39,8 +45,8 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 }
                 else if (gameObject.tag == "ReturnCanvas")
                 {
-
                     gameObject.GetComponent<ButtonAction>().sphereScene();
+
                 }
                 else if (gameObject.tag == "ExitCanvas")
                 {
@@ -55,12 +61,21 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 {
                     gameObject.transform.parent.parent.GetComponent<ButtonAction>().riverSceneRandom(gameObject.GetComponentInChildren<WordScript>().wordText.text);
                 }
+                else if(gameObject.tag == "VideoReturnCanvas")
+                {
+                    gameObject.GetComponent<ButtonAction>().videoScene();
+                }
 
             }
         }
         else
         {
             timeElapsed = 0;
+            if (GameObject.Find("LoadingBar") != null)
+            {
+                GameObject.Find("LoadingBar").GetComponentInChildren<SpriteRenderer>().enabled = true;
+                GameObject.Find("LoadingBar").GetComponentInChildren<Text>().text = "Cargando";
+            }
         }
     }
 

@@ -33,7 +33,7 @@ public class CanvasSpawner : MonoBehaviour
                 float angle = (float)(i * Mathf.PI * 2);
                 var x = Mathf.Sin(angle) * radius;
                 var z = Mathf.Cos(angle) * radius;
-                var pos = new Vector3(x, 1, z);
+                var pos = new Vector3(x, 0, z);
                 GameObject go = Instantiate(CanvasPrefab, pos, Quaternion.identity) as GameObject;
                 go.transform.SetParent(GameObject.Find("WordSphere").transform);
                 go.GetComponentInChildren<WordCanvasScript>().videoLink = urls[pointNum];

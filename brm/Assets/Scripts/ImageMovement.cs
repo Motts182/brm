@@ -22,22 +22,15 @@ public class ImageMovement : MonoBehaviour
     }
     void Start()
     {
-        iTween.FadeTo(gameObject, iTween.Hash(
-                                                "alpha", 1f,
-                                                "time", 1f,
-                                                "delay", 9f,
-                                                "onstart", "formatAlpha"
-                                                //"oncomplete", "alphaOnMetod1"
-                                                ));
         iTween.ScaleTo(gameObject, iTween.Hash(
                                                 "scale", new Vector3(2f, 2f, 1f),
                                                 "time", 10f,
-                                                "loopType", "loop",
+                                                //"loopType", "loop",
                                                 "easetype", iTween.EaseType.easeInOutSine
                                                 ));
         iTween.MoveTo(gameObject, iTween.Hash(
                                                 "path", iTweenPath.GetPath(ImgPath),
-                                                "time", 10f,
+                                                "time", 17f,
                                                 "loopType", "loop",
                                                 "easetype", iTween.EaseType.easeInOutSine
                                                 ));
