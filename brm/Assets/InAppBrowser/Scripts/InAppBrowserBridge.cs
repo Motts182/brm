@@ -33,7 +33,7 @@ public class InAppBrowserBridge : MonoBehaviour
 
     void OnBrowserFinishedLoading(string url)
     {
-        string pattern = "http://blank.org/"; //"http://www.brm.com.co/themes/site_themes/brm_site/default_site/Site_brm.group/img/logo.png#access_token=";
+        string pattern = "http://blank.org/#access_token="; //"http://www.brm.com.co/themes/site_themes/brm_site/default_site/Site_brm.group/img/logo.png#access_token=";
         string token = url;
         token = System.Text.RegularExpressions.Regex.Replace(token, pattern, string.Empty);
         var browser = FindObjectOfType<BrowserLogin>();
@@ -42,8 +42,8 @@ public class InAppBrowserBridge : MonoBehaviour
         if (matchEndPoint == true)
         {
             browser.StartCoroutine(browser.closeBrowserAfterXSec(1));
-            browser.loginBtn.SetActive(false);
             browser.nextBtn.SetActive(true);
+            browser.videoManagerContinue.SetActive(true);
         }
         onBrowserFinishedLoading.Invoke(url);
     }

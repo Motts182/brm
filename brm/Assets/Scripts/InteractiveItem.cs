@@ -38,7 +38,6 @@ public class InteractiveItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 timeElapsed = 0;
                 progressImage.fillAmount = 0;
                 isEntered = false;
-                // aca va la real mecanica española, hay que tener en cuenta que van a haber acciones distintas que se van a accionar de la misma forma y aca no esta contemplado.
                 if (gameObject.tag == "ImgPrefab")
                 {
                     Debug.Log("He seleccionado una imagen");

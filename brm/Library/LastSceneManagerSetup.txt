@@ -1,4 +1,1 @@
-sceneSetups:
-- path: Assets/Scenas/SphereScene.unity
-  isLoaded: 1
-  isActive: 1
+sceneSetups: []

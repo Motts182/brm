@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using LitJson;
+using Facebook.Unity;
 
 public class BrowserLogin : MonoBehaviour
 {
@@ -12,12 +13,15 @@ public class BrowserLogin : MonoBehaviour
     string igPage;
     string preroutedtoken = "1474921476.78d3e74.533f9347905f4746bf2147d151c48049";
     public Text loginMessage;
-    public GameObject loginBtn;
     public GameObject nextBtn;
     public GameObject profilePic;
     public GameObject videoManagerLogin;
     public GameObject videoManagerContinue;
     public GameObject loadingWidget;
+    public GameObject LoginPopUp;
+    public GameObject LoginBtn;
+    public Sprite GuestImg;
+    public FBscript fbscript;
 
     void Awake()
     {
@@ -30,6 +34,9 @@ public class BrowserLogin : MonoBehaviour
 
     public void InstagramLogin()
     {
+        loadingWidget.SetActive(true);
+        LoginPopUp.SetActive(false);
+        videoManagerLogin.SetActive(false);
         InAppBrowser.DisplayOptions options = new InAppBrowser.DisplayOptions();
         options.backButtonText = "Return";
         options.pageTitle = "Instagram Login";
@@ -37,15 +44,50 @@ public class BrowserLogin : MonoBehaviour
         InAppBrowser.OpenURL(igPage, options);
     }
 
+    public IEnumerator GuestLoginIenum()
+    {
+        LoginPopUp.SetActive(false);
+        WWW wwwguest = new WWW("http://www.brm.com.co/appbrm/token.php");
+        yield return wwwguest;
+        JsonData dataguest = JsonMapper.ToObject(wwwguest.text);
+        GameControllerScript gcs = FindObjectOfType<GameControllerScript>();
+        gcs.userToken = dataguest["data"]["token"][0].ToString();
+        print(dataguest["data"]["token"][0].ToString());
+        videoManagerLogin.SetActive(false);
+        LoginBtn.SetActive(false);
+        loadingWidget.SetActive(false);
+        videoManagerContinue.SetActive(true);
+        nextBtn.SetActive(true);
+        profilePic.SetActive(true);
+        profilePic.GetComponent<Image>().sprite = GuestImg;
+        loginMessage.text = "Bienvenido !";
+    }
+
+    public void GuestLogin()
+    {
+        StartCoroutine(GuestLoginIenum());
+    }
+
+    public IEnumerator FBLoginIenum()
+    {
+        fbscript.FBlogin();
+        yield return null;
+    }
+
+    public void FBLogin()
+    {
+        StartCoroutine(FBLoginIenum());
+    }
+
     public IEnumerator closeBrowserAfterXSec(int x)
     {
         yield return new WaitForSeconds(x);
         InAppBrowser.CloseBrowser();
+        WWW www = new WWW("http://www.brm.com.co/appbrm/index.php?acces_token=" + userToken);
     }
 
     public IEnumerator getProfilePicture()
     {
-        loadingWidget.SetActive(true);
         WWW request = new WWW("https://api.instagram.com/v1/users/self/?access_token=" + userToken);
         yield return request;
         JsonData data = JsonMapper.ToObject(request.text);
@@ -56,8 +98,7 @@ public class BrowserLogin : MonoBehaviour
         Sprite picSprite = Sprite.Create(picTexture, new Rect(0, 0, picTexture.width, picTexture.height), new Vector2(0.5f, 0.5f));
         //profilePic.GetComponent<GUITexture>().texture = picTexture;
         profilePic.GetComponent<Image>().sprite = picSprite;
-        videoManagerLogin.SetActive(false);
-        videoManagerContinue.SetActive(true);
+
         yield return new WaitForSeconds(2);
         loadingWidget.SetActive(false);
         profilePic.SetActive(true);
@@ -83,6 +124,18 @@ public class BrowserLogin : MonoBehaviour
         {
             userToken = value;
             GetToken();
+        }
+    }
+
+    public void enablePopUp()
+    {
+        if (!LoginPopUp.activeInHierarchy)
+        {
+            LoginPopUp.SetActive(true);
+        }
+        else
+        {
+            LoginPopUp.SetActive(false);
         }
     }
 }
